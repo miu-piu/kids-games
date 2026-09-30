@@ -1,4 +1,4 @@
-var CACHE = 'speech-games-v5';
+var CACHE = 'speech-games-v6';
 var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./patch.js','./voice.js','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', function (event) {

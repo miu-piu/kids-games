@@ -49,3 +49,32 @@ button{font:inherit}
   .app{padding-top:6px}.status{margin-bottom:4px}.mastery-bar{margin-bottom:5px}.prompt{margin:2px 0 6px}
   .card{max-height:190px}.emoji{font-size:82px}
 }
+
+/* v3: fit-first child layout */
+.board{overflow:hidden}
+.card{aspect-ratio:auto}
+.round-done.show{display:none!important}
+
+#speakBtn{
+  position:static;
+  width:82%;
+  height:52px;
+  margin:2px auto 12px;
+  border:0;
+  border-radius:16px;
+  background:#b8d66f;
+  color:#26301d;
+  font-size:18px;
+  font-weight:900;
+  box-shadow:none;
+}
+#speakBtn:active{transform:scale(.98)}
+.big-emoji{margin-bottom:4px}
+.big-word{margin-top:2px}
+
+@media (max-height:650px) and (orientation:landscape){
+  .big-emoji{font-size:106px}
+  .word-card{max-width:320px;padding:12px 14px 14px}
+  #speakBtn{height:46px;margin-bottom:8px}
+  .big-word{font-size:34px}
+}

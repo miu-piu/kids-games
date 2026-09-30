@@ -1,5 +1,5 @@
 var CACHE = 'speech-games-v2';
-var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./manifest.webmanifest','./icon.svg'];
+var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./patch.js','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(caches.open(CACHE).then(function (cache) {

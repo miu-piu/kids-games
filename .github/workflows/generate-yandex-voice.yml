@@ -1,4 +1,4 @@
-name: Generate Yandex SpeechKit voice
+name: Generate Yandex SpeechKit Marina voice
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
             word="$1"
             file="$2"
             echo "Generating $word -> $file"
-            curl --fail --silent --show-error               --request POST               --header "Authorization: Api-Key ${YC_API_KEY}"               --data-urlencode "text=${word}"               --data "lang=ru-RU&voice=alena&emotion=good&speed=0.90"               "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize"               --output "audio/${file}.ogg"
+            curl --fail --silent --show-error               --request POST               --header "Authorization: Api-Key ${YC_API_KEY}"               --data-urlencode "text=${word}"               --data "lang=ru-RU&voice=marina&emotion=friendly&speed=0.90"               "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize"               --output "audio/${file}.ogg"
           }
 
           tts "яблоко" apple

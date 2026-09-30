@@ -1,0 +1,20 @@
+{
+  "name": "Бутылочки — спокойная сортировка",
+  "short_name": "Бутылочки",
+  "description": "Чистая офлайн-головоломка без рекламы, таймеров, жизней и внутриигровых покупок.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#111513",
+  "theme_color": "#111513",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

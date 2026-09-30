@@ -1,0 +1,20 @@
+{
+  "name": "Найди пару — слова",
+  "short_name": "Найди пару",
+  "description": "Спокойная детская игра на память и развитие речи.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#171816",
+  "theme_color": "#171816",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

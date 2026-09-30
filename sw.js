@@ -1,5 +1,5 @@
-var CACHE = 'speech-games-v4';
-var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./patch.js','./manifest.webmanifest','./icon.svg'];
+var CACHE = 'speech-games-v5';
+var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./patch.js','./voice.js','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(caches.open(CACHE).then(function (cache) {
@@ -26,7 +26,9 @@ self.addEventListener('fetch', function (event) {
       if (cached) return cached;
       return fetch(event.request).then(function (response) {
         var copy = response.clone();
-        caches.open(CACHE).then(function (cache) { cache.put(event.request, copy); });
+        if (response && response.ok) {
+          caches.open(CACHE).then(function (cache) { cache.put(event.request, copy); });
+        }
         return response;
       }).catch(function () { return caches.match('./index.html'); });
     })

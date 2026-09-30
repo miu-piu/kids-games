@@ -25,10 +25,18 @@
     return x;
   }
   function buildDeck(){
-    var items=currentSet().items, deck=[],i;
+    var items=currentSet().items, ranked=[], deck=[], i, chosen;
     for(i=0;i<items.length;i++){
-      deck.push({emoji:items[i][0],word:items[i][1],pair:i});
-      deck.push({emoji:items[i][0],word:items[i][1],pair:i});
+      ranked.push({item:items[i],score:points(items[i][1]),tie:Math.random()});
+    }
+    ranked.sort(function(a,b){
+      if(a.score!==b.score)return a.score-b.score;
+      return a.tie-b.tie;
+    });
+    chosen=ranked.slice(0,2);
+    for(i=0;i<chosen.length;i++){
+      deck.push({emoji:chosen[i].item[0],word:chosen[i].item[1],pair:i});
+      deck.push({emoji:chosen[i].item[0],word:chosen[i].item[1],pair:i});
     }
     return shuffle(deck);
   }
@@ -36,7 +44,7 @@
     var set=currentSet(), deck=buildDeck(), i;
     first=second=null;locked=false;misses={};matched=0;roundDone.className="round-done";
     setTitle.textContent="Учимся: "+set.name;
-    setSubtitle.textContent="Набор "+(state.setIndex+1)+" · 4 слова";
+    setSubtitle.textContent="Набор "+(state.setIndex+1)+" · 4 слова · по 2 за раунд";
     board.innerHTML="";
     for(i=0;i<deck.length;i++) createCard(deck[i],i);
     updateProgress();
@@ -93,7 +101,7 @@
   function hideWord(){
     overlay.className="overlay";
     updateProgress();
-    if(matched>=4)finishRound();
+    if(matched>=2)finishRound();
   }
   function speak(word){
     if(!("speechSynthesis" in window))return;

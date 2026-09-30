@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#171816">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Найди пару — слова</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="child-locked">
+  <main id="app" class="app">
+    <header class="status">
+      <div>
+        <div id="setTitle" class="set-title">Учимся</div>
+        <div id="setSubtitle" class="set-subtitle"></div>
+      </div>
+      <div id="masteryText" class="mastery-text"></div>
+    </header>
+
+    <div class="mastery-bar"><div id="masteryFill"></div></div>
+
+    <div class="prompt">
+      Найди одинаковые картинки
+      <small>Можно нажимать двумя пальцами сразу</small>
+    </div>
+
+    <section id="board" class="board" aria-label="Карточки"></section>
+
+    <section id="roundDone" class="round-done" aria-live="polite">
+      <div class="round-title">Раунд закончен</div>
+      <div id="roundSummary" class="round-summary"></div>
+      <button id="againBtn" class="primary" type="button">Ещё раз</button>
+    </section>
+  </main>
+
+  <div id="wordOverlay" class="overlay" aria-live="polite">
+    <div class="word-card">
+      <button id="speakBtn" class="speaker" type="button" aria-label="Повторить слово">🔊</button>
+      <div id="bigEmoji" class="big-emoji"></div>
+      <div id="bigWord" class="big-word"></div>
+      <div class="tap-hint">Нажми на карточку, когда готовы дальше</div>
+    </div>
+  </div>
+
+  <button id="parentLock" class="parent-lock" type="button" aria-label="Родительский режим">🔒</button>
+  <div id="lockHint" class="lock-hint">Удерживай 3 секунды</div>
+
+  <section id="parentPanel" class="parent-panel" aria-label="Родительский режим">
+    <div class="parent-box">
+      <h2>Родительский режим</h2>
+      <p>Игра сама держит текущий набор, пока слова не закрепятся.</p>
+
+      <div id="progressList" class="progress-list"></div>
+
+      <button id="nextSetBtn" class="parent-action" type="button">Перейти к следующему набору</button>
+      <button id="restartSetBtn" class="parent-action secondary" type="button">Сбросить текущий набор</button>
+      <button id="closeParentBtn" class="parent-action secondary" type="button">Вернуться в игру</button>
+    </div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

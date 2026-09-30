@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#111513" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Бутылочки</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <style>
+    :root{--bg:#111513;--panel:#171c19;--text:#eef2ed;--muted:#8f9b93;--line:rgba(239,245,240,.22);--line-strong:rgba(239,245,240,.42);--button:#1c231f;--button-press:#252e29;--safe-top:max(18px,env(safe-area-inset-top));--safe-bottom:max(18px,env(safe-area-inset-bottom))}
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overscroll-behavior:none}
+    body{display:flex;justify-content:center;touch-action:manipulation}
+    button{font:inherit;color:inherit}
+    .app{width:min(100%,620px);height:100dvh;min-height:520px;padding:var(--safe-top) 18px var(--safe-bottom);display:grid;grid-template-rows:auto auto 1fr auto;gap:12px}
+    header{display:flex;align-items:flex-end;justify-content:space-between;min-height:48px}
+    h1{margin:0;font-size:22px;font-weight:650;letter-spacing:-.02em}
+    .meta{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+    .hint{min-height:24px;display:flex;align-items:center;color:var(--muted);font-size:13px;line-height:1.35}
+    .board{align-self:center;display:grid;grid-template-columns:repeat(var(--cols),minmax(48px,1fr));gap:24px 12px;align-items:end;justify-items:center;padding:8px 0 14px}
+    .bottle{appearance:none;border:0;background:none;padding:0;width:min(64px,14vw);height:min(210px,34vh);min-width:48px;min-height:150px;position:relative;cursor:pointer;outline:none;transition:transform .14s ease,filter .14s ease}
+    .bottle::before{content:"";position:absolute;left:17%;right:17%;top:0;height:8%;border:2px solid var(--line-strong);border-bottom:0;border-radius:8px 8px 0 0;background:rgba(255,255,255,.018)}
+    .glass{position:absolute;left:7%;right:7%;top:6%;bottom:0;border:2px solid var(--line-strong);border-top:0;border-radius:0 0 17px 17px;overflow:hidden;background:rgba(255,255,255,.018);box-shadow:inset 0 0 18px rgba(255,255,255,.018)}
+    .liquid{position:absolute;left:4px;right:4px;height:24%;border-radius:5px 5px 3px 3px;opacity:.94;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+    .bottle.selected{transform:translateY(-9px);filter:drop-shadow(0 8px 16px rgba(0,0,0,.18))}
+    .bottle.selected .glass,.bottle.selected::before{border-color:rgba(239,245,240,.78)}
+    .bottle:focus-visible .glass,.bottle:focus-visible::before{border-color:#fff}
+    .controls{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px}
+    .control{border:1px solid rgba(255,255,255,.07);background:var(--button);border-radius:15px;padding:13px 10px;font-size:14px;font-weight:560;cursor:pointer;min-height:46px}
+    .control:active{background:var(--button-press)}
+    .control:disabled{opacity:.32;cursor:default}
+    .control.primary{background:#e8eee9;color:#18201b;border-color:transparent}
+    .control.primary:active{background:#d8e0da}
+    .done{position:fixed;inset:0;background:rgba(10,13,11,.78);display:flex;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);z-index:4}
+    .done[hidden]{display:none}
+    .done-card{width:min(330px,92vw);background:#181e1a;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:24px;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.34)}
+    .done-title{font-size:27px;font-weight:650;letter-spacing:-.03em;margin:2px 0 7px}
+    .done-copy{color:var(--muted);font-size:14px;margin:0 0 20px}
+    .done-card .control{width:100%}
+    @media (max-width:430px){.app{padding-left:14px;padding-right:14px}.board{gap:21px 8px}.bottle{width:min(58px,14.4vw)}}
+    @media (max-height:650px){.app{gap:6px}.bottle{height:min(180px,32vh);min-height:132px}.board{gap:16px 10px;padding:2px 0 6px}}
+    @media (prefers-reduced-motion:reduce){.bottle{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Бутылочки</h1>
+      <div class="meta"><span id="puzzleLabel">Задача 1</span> · <span id="movesLabel">0 ходов</span></div>
+    </header>
+    <div class="hint" id="hint">Собери каждый цвет в отдельной бутылочке.</div>
+    <section class="board" id="board" aria-label="Игровое поле"></section>
+    <nav class="controls" aria-label="Управление">
+      <button class="control" id="undoBtn" type="button">Отменить</button>
+      <button class="control" id="restartBtn" type="button">Сначала</button>
+      <button class="control primary" id="newBtn" type="button">Новая задача</button>
+    </nav>
+  </main>
+
+  <div class="done" id="done" hidden>
+    <div class="done-card" role="dialog" aria-modal="true" aria-labelledby="doneTitle">
+      <div class="done-title" id="doneTitle">Готово.</div>
+      <p class="done-copy" id="doneCopy">Спокойно и без таймера.</p>
+      <button class="control primary" id="nextBtn" type="button">Следующая задача</button>
+    </div>
+  </div>
+
+<script>
+(() => {
+  'use strict';
+
+  const CAPACITY = 4;
+  const EMPTY_BOTTLES = 2;
+  const COLORS = ['#c98378','#7fa4a3','#9a8fb5','#d0ad6a','#7190ad','#9baa78','#b07d96','#c3a28b'];
+
+  const boardEl = document.getElementById('board');
+  const hintEl = document.getElementById('hint');
+  const puzzleLabel = document.getElementById('puzzleLabel');
+  const movesLabel = document.getElementById('movesLabel');
+  const undoBtn = document.getElementById('undoBtn');
+  const restartBtn = document.getElementById('restartBtn');
+  const newBtn = document.getElementById('newBtn');
+  const doneEl = document.getElementById('done');
+  const doneCopy = document.getElementById('doneCopy');
+  const nextBtn = document.getElementById('nextBtn');
+
+  let state = [];
+  let initialState = [];
+  let history = [];
+  let selected = -1;
+  let puzzleNo = Number(localStorage.getItem('waterSortPuzzleNo') || '1');
+  let seed = Number(localStorage.getItem('waterSortSeed') || '0');
+
+  function clone(s) { return s.map(b => b.slice()); }
+  function sameState(a, b) {
+    if (a.length !== b.length) return false;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i].length !== b[i].length) return false;
+      for (let j = 0; j < a[i].length; j++) if (a[i][j] !== b[i][j]) return false;
+    }
+    return true;
+  }
+  function keyOf(s) { return s.map(b => b.join('')).join('|'); }
+
+  function mulberry32(a) {
+    return function() {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      let t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  function topRun(bottle) {
+    if (!bottle.length) return 0;
+    const c = bottle[bottle.length - 1];
+    let n = 1;
+    for (let i = bottle.length - 2; i >= 0 && bottle[i] === c; i--) n++;
+    return n;
+  }
+
+  function pour(s, from, to) {
+    if (from === to) return null;
+    const src = s[from], dst = s[to];
+    if (!src.length || dst.length >= CAPACITY) return null;
+    const color = src[src.length - 1];
+    if (dst.length && dst[dst.length - 1] !== color) return null;
+    const amount = Math.min(topRun(src), CAPACITY - dst.length);
+    if (amount <= 0) return null;
+    const out = clone(s);
+    const moved = out[from].splice(out[from].length - amount, amount);
+    out[to].push(...moved);
+    return { state: out, amount };
+  }
+
+  function solved(s) {
+    return s.every(b => !b.length || (b.length === CAPACITY && b.every(x => x === b[0])));
+  }
+
+  // Генерация идёт от решённого поля назад.
+  // Обратный шаг принимается только тогда, когда один обычный легальный
+  // перелив из нового состояния в точности восстанавливает предыдущее.
+  // Поэтому у каждой созданной задачи существует проверенная цепочка решения.
+  function reverseCandidates(current, visited) {
+    const candidates = [];
+    for (let from = 0; from < current.length; from++) {
+      const src = current[from];
+      if (!src.length) continue;
+      const run = topRun(src);
+      for (let to = 0; to < current.length; to++) {
+        if (to === from) continue;
+        const free = CAPACITY - current[to].length;
+        if (free <= 0) continue;
+        for (let amount = 1; amount <= Math.min(run, free); amount++) {
+          const candidate = clone(current);
+          const moved = candidate[from].splice(candidate[from].length - amount, amount);
+          candidate[to].push(...moved);
+          const proof = pour(candidate, to, from);
+          if (!proof || !sameState(proof.state, current)) continue;
+          const k = keyOf(candidate);
+          if (visited.has(k)) continue;
+          let mixed = 0;
+          for (const b of candidate) if (new Set(b).size > 1) mixed++;
+          candidates.push({state:candidate, mixed});
+        }
+      }
+    }
+    return candidates;
+  }
+
+  function generate(seedValue, colorsCount) {
+    const rng = mulberry32(seedValue >>> 0);
+    const solvedState = [];
+    for (let c = 0; c < colorsCount; c++) solvedState.push(Array(CAPACITY).fill(c));
+    for (let e = 0; e < EMPTY_BOTTLES; e++) solvedState.push([]);
+
+    const targetSteps = 24 + colorsCount * 8 + Math.floor(rng() * 16);
+    let current = clone(solvedState);
+    const visited = new Set([keyOf(current)]);
+
+    for (let step = 0; step < targetSteps; step++) {
+      const candidates = reverseCandidates(current, visited);
+      if (!candidates.length) break;
+      candidates.sort((a,b) => b.mixed - a.mixed);
+      const poolSize = Math.min(candidates.length, Math.max(4, Math.floor(candidates.length * .45)));
+      const pick = candidates[Math.floor(rng() * poolSize)];
+      current = pick.state;
+      visited.add(keyOf(current));
+    }
+
+    const mixedCount = current.filter(b => new Set(b).size > 1).length;
+    if (solved(current) || mixedCount < Math.min(3, colorsCount - 1)) return null;
+    return current;
+  }
+
+  function createPuzzle(newSeed = true) {
+    let candidate = null;
+    let attempts = 0;
+    if (newSeed || !seed) seed = (crypto.getRandomValues(new Uint32Array(1))[0] || Date.now()) >>> 0;
+    while (!candidate && attempts < 40) {
+      const colorsCount = Math.min(8, 4 + Math.floor((puzzleNo - 1) / 6));
+      candidate = generate((seed + attempts * 2654435761) >>> 0, colorsCount);
+      attempts++;
+    }
+    if (!candidate) candidate = generate((Date.now() >>> 0), 5);
+    state = clone(candidate);
+    initialState = clone(candidate);
+    history = [];
+    selected = -1;
+    localStorage.setItem('waterSortSeed', String(seed));
+    localStorage.setItem('waterSortPuzzleNo', String(puzzleNo));
+    saveCurrent();
+    doneEl.hidden = true;
+    render();
+  }
+
+  function saveCurrent() {
+    localStorage.setItem('waterSortCurrent', JSON.stringify({puzzleNo, seed, state, initialState, history}));
+  }
+
+  function restoreCurrent() {
+    try {
+      const raw = localStorage.getItem('waterSortCurrent');
+      if (!raw) return false;
+      const saved = JSON.parse(raw);
+      if (!Array.isArray(saved.state) || !Array.isArray(saved.initialState)) return false;
+      puzzleNo = Number(saved.puzzleNo || 1);
+      seed = Number(saved.seed || 0);
+      state = saved.state;
+      initialState = saved.initialState;
+      history = Array.isArray(saved.history) ? saved.history : [];
+      selected = -1;
+      return true;
+    } catch (_) { return false; }
+  }
+
+  function pluralMoves(n) {
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return `${n} ход`;
+    if (m10 >= 2 && m10 <= 4 && !(m100 >= 12 && m100 <= 14)) return `${n} хода`;
+    return `${n} ходов`;
+  }
+
+  function render() {
+    boardEl.innerHTML = '';
+    boardEl.style.setProperty('--cols', state.length <= 6 ? state.length : Math.ceil(state.length / 2));
+    const twoRows = state.length > 6;
+    if (twoRows) boardEl.style.gridTemplateColumns = `repeat(${Math.ceil(state.length / 2)}, minmax(48px,1fr))`;
+    else boardEl.style.gridTemplateColumns = `repeat(${state.length}, minmax(48px,1fr))`;
+
+    state.forEach((bottle, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'bottle' + (selected === i ? ' selected' : '');
+      btn.type = 'button';
+      btn.setAttribute('aria-label', bottle.length ? `Бутылочка ${i+1}, заполнено ${bottle.length} из ${CAPACITY}` : `Пустая бутылочка ${i+1}`);
+      btn.addEventListener('click', () => tapBottle(i));
+      const glass = document.createElement('span');
+      glass.className = 'glass';
+      bottle.forEach((colorIndex, slot) => {
+        const liquid = document.createElement('span');
+        liquid.className = 'liquid';
+        liquid.style.background = COLORS[colorIndex];
+        liquid.style.bottom = `${2 + slot * 24}%`;
+        glass.appendChild(liquid);
+      });
+      btn.appendChild(glass);
+      boardEl.appendChild(btn);
+    });
+
+    puzzleLabel.textContent = `Задача ${puzzleNo}`;
+    movesLabel.textContent = pluralMoves(history.length);
+    undoBtn.disabled = history.length === 0;
+    hintEl.textContent = selected < 0 ? 'Собери каждый цвет в отдельной бутылочке.' : 'Выбери, куда перелить.';
+  }
+
+  function tapBottle(i) {
+    if (doneEl.hidden === false) return;
+    if (selected < 0) {
+      if (!state[i].length) return;
+      selected = i;
+      render();
+      return;
+    }
+    if (selected === i) {
+      selected = -1;
+      render();
+      return;
+    }
+    const result = pour(state, selected, i);
+    if (!result) {
+      if (state[i].length) selected = i;
+      else selected = -1;
+      render();
+      return;
+    }
+    history.push(clone(state));
+    state = result.state;
+    selected = -1;
+    saveCurrent();
+    render();
+    if (solved(state)) {
+      doneCopy.textContent = `${pluralMoves(history.length)}. Без таймера и оценок.`;
+      setTimeout(() => { doneEl.hidden = false; }, 130);
+    }
+  }
+
+  undoBtn.addEventListener('click', () => {
+    if (!history.length) return;
+    state = history.pop();
+    selected = -1;
+    doneEl.hidden = true;
+    saveCurrent();
+    render();
+  });
+
+  restartBtn.addEventListener('click', () => {
+    state = clone(initialState);
+    history = [];
+    selected = -1;
+    doneEl.hidden = true;
+    saveCurrent();
+    render();
+  });
+
+  function nextPuzzle() {
+    puzzleNo += 1;
+    createPuzzle(true);
+  }
+
+  newBtn.addEventListener('click', nextPuzzle);
+  nextBtn.addEventListener('click', nextPuzzle);
+
+  if (!restoreCurrent()) createPuzzle(true);
+  else render();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+  }
+})();
+</script>
+</body>
+</html>

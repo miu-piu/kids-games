@@ -37,7 +37,6 @@ button{font:inherit}
 .parent-box h2{margin:0 0 6px}.parent-box p{color:#77736c;font-size:12px;line-height:1.4}
 .progress-list{display:grid;gap:8px;margin:16px 0}.progress-row{display:flex;justify-content:space-between;align-items:center;background:#e4ddd2;border-radius:12px;padding:10px 12px;font-weight:800}
 .dots{letter-spacing:3px;color:#77736c}.parent-action{margin-top:8px}.parent-action.secondary{background:#ded7cc;color:#292a25}
-body.child-locked .round-done{pointer-events:none}
 @media (min-width:560px){
   .app{padding:12px 18px}.board{gap:10px}.card{width:calc(25% - 8px);max-height:235px}
   .emoji{font-size:92px}.word{font-size:16px}.prompt{font-size:17px}

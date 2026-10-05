@@ -1,6 +1,5 @@
 'use strict';
 (() => {
-  const positions = { '11-squirrel': '70% 50%', '17-lynx': '100% 50%', '19-amur-leopard': '70% 50%', '20-tiger': '100% 50%', '31-tit': '70% 50%', '33-crow': '80% 50%', '50-walrus': '50% 50%', '53-lizard': '70% 50%', '58-dragonfly': '20% 50%', '18-chipmunk': '0% 50%', '41-whale': '60% 50%', '40-swan': '70% 50%', '38-cuckoo': '80% 50%', '35-pigeon': '45% 50%' };
   const slides = [
   [
     "02-kitten",
@@ -234,9 +233,10 @@
     "59-ladybird",
     "Ladybird"
   ]
-].map(([name, alt]) => ({ src: `./assets/images/${name}.webp`, alt, position: positions[name] || '50% 50%' }));
+].map(([name, alt]) => ({ src: `./assets/images/${name}.webp`, alt, position: '50% 50%' }));
   const gallery = document.getElementById('gallery');
   const image = document.getElementById('animal');
+  const syncBackground = () => gallery.style.setProperty('--photo', `url("${slides[index].src}")`);
   const AUTO_MS = 30_000;
   const COOLDOWN_MS = 350;
   const loaded = new Map();
@@ -284,6 +284,7 @@
       image.src = slides[index].src;
       image.alt = slides[index].alt;
       image.style.objectPosition = slides[index].position;
+      syncBackground();
       lastChange = performance.now();
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
         image.getAnimations().forEach(animation => animation.cancel());
@@ -346,6 +347,7 @@
   });
   window.addEventListener('pagehide', () => { clearTimeout(timer); gesture = null; pointers.clear(); });
   window.addEventListener('pageshow', restartTimer);
+  syncBackground();
   warmNeighbours();
   restartTimer();
   if ('serviceWorker' in navigator) {

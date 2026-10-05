@@ -14,7 +14,7 @@ function surface(extra={}) {
 const flush=()=>new Promise(resolve=>setImmediate(resolve));
 async function appTests() {
   let now=0,sequence=0; const timers=new Map();
-  const gallery=surface({clientWidth:412,setPointerCapture(){}});
+  const gallery=surface({clientWidth:412,style:{setProperty(key,value){this[key]=value;}},setPointerCapture(){}});
   const image={src:'./assets/images/02-kitten.webp',style:{},getAnimations(){return [];},animate(){}};
   const document=surface({hidden:false,getElementById:id=>id==='gallery'?gallery:image});
   const window=surface();
@@ -31,6 +31,7 @@ async function appTests() {
   const pointer=(name,x,y,id=1)=>gallery.dispatch(name,{pointerId:id,pointerType:'touch',clientX:x,clientY:y,button:0});
   async function swipe(dx,dy=0,duration=200){pointer('pointerdown',250,400);await tick(duration);pointer('pointermove',250+dx,400+dy);pointer('pointerup',250+dx,400+dy);await flush();}
   const at=name=>image.src.includes(name);
+  ok(gallery.style['--photo'].includes('02-kitten'),'initial backdrop matches photograph');
   await swipe(0); ok(at('02-kitten'),'tap ignored');
   await swipe(12,4); ok(at('02-kitten'),'jitter ignored');
   await swipe(5,160); ok(at('02-kitten'),'vertical ignored');
@@ -39,6 +40,7 @@ async function appTests() {
   pointer('pointerdown',250,400);pointer('pointerdown',300,400,2);await tick(200);pointer('pointerup',100,400);pointer('pointerup',150,400,2);await flush();ok(at('02-kitten'),'multi-touch ignored');
   pointer('pointerdown',250,400);await tick(200);pointer('pointercancel',100,400);pointer('pointerup',100,400);await flush();ok(at('02-kitten'),'cancelled gesture ignored');
   await swipe(-140);ok(at('03-irish-setter'),'left advances');
+  ok(gallery.style['--photo'].includes('03-irish-setter'),'backdrop follows accepted transition');
   pointer('pointerup',100,400);await flush();ok(at('03-irish-setter'),'duplicate pointerup ignored');
   await swipe(-140);ok(at('03-irish-setter'),'rapid repeat suppressed');
   await tick(400);await swipe(140);ok(at('02-kitten'),'right goes back');

@@ -1,0 +1,12 @@
+{
+  "tool": "built-in imagegen",
+  "prompt": "Use case: precise-object-edit. Asset type: square Android PWA launcher icon, expanded background. Edit target: supplied puppy picture. Preserve this EXACT puppy, face, black-and-white fur, ear shapes, raised waving paw, gentle eyes, sitting pose and warm beige photographic style. Extend the existing softly blurred beige garden background seamlessly to ALL FOUR edges of a larger SQUARE canvas. Remove the pre-drawn rounded rectangle and all white corners/borders: this must be an edge-to-edge opaque square photo; Android applies its own mask. Zoom out and recenter the complete puppy so ALL of its silhouette (both ears, waving paw, feet, tail) is within a central CIRCLE of radius 35 percent of canvas width. Aim puppy head-to-feet height about 58 percent of canvas, centered horizontally and vertically. There must be generous natural garden background around the entire puppy. No frame, no white bands, no solid padding, no other animals, no words, no logo, no watermark. Only extend background and reduce composition scale for safe system icon cropping; do not redesign or change the puppy.",
+  "selectedSource": "zveryata-background-v2.png",
+  "exports": [
+    "zveryata-v2-192.png",
+    "zveryata-v2-512.png",
+    "zveryata-v2-maskable-512.png"
+  ],
+  "maskCheck": "Puppy remains visible under centered circular mask of radius 40 percent.",
+  "documentation": "https://web.dev/articles/maskable-icon"
+}

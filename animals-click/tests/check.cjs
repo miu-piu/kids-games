@@ -52,7 +52,9 @@ const server = http.createServer((req,res) => {
   check(install.installabilityErrors.length===0,'Chromium installability checks');
   await gesture(0); check((await current()).includes('02-kitten'),'tap does nothing');
   await gesture(12,4); check((await current()).includes('02-kitten'),'short movement ignored');
-  await gesture(5,160); check((await current()).includes('02-kitten'),'vertical gesture ignored');
+  await gesture(5,-160); await expectSlide('03-irish-setter'); check((await current()).includes('03-irish-setter'),'up advances');
+  await page.clock.runFor(400); await gesture(5,160); await expectSlide('02-kitten'); check((await current()).includes('02-kitten'),'down goes back');
+  await page.clock.runFor(400); await gesture(0,24); check((await current()).includes('02-kitten'),'short vertical movement ignored');
   await gesture(100,90); check((await current()).includes('02-kitten'),'diagonal gesture ignored');
   await gesture(-140,0,1100); check((await current()).includes('02-kitten'),'hold then drag ignored');
   await touch('touchStart',[[240,400,1],[290,400,2]]); await page.clock.runFor(200);

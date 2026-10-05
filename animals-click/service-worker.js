@@ -1,6 +1,6 @@
 'use strict';
 const PREFIX = `animals-click:${self.registration.scope}:`;
-const CACHE = `${PREFIX}v6`;
+const CACHE = `${PREFIX}v7`;
 const ASSETS = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './assets/icons/zveryata-v2-192.png', './assets/icons/zveryata-v2-512.png', './assets/icons/zveryata-v2-maskable-512.png',

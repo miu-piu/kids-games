@@ -14,7 +14,7 @@ function surface(extra={}) {
 const flush=()=>new Promise(resolve=>setImmediate(resolve));
 async function appTests() {
   let now=0,sequence=0; const timers=new Map();
-  const gallery=surface({clientWidth:412,style:{setProperty(key,value){this[key]=value;}},setPointerCapture(){}});
+  const gallery=surface({clientWidth:412,clientHeight:915,style:{setProperty(key,value){this[key]=value;}},setPointerCapture(){}});
   const image={src:'./assets/images/02-kitten.webp',style:{},getAnimations(){return [];},animate(){}};
   const document=surface({hidden:false,getElementById:id=>id==='gallery'?gallery:image});
   const window=surface();
@@ -34,7 +34,11 @@ async function appTests() {
   ok(gallery.style['--photo'].includes('02-kitten'),'initial backdrop matches photograph');
   await swipe(0); ok(at('02-kitten'),'tap ignored');
   await swipe(12,4); ok(at('02-kitten'),'jitter ignored');
-  await swipe(5,160); ok(at('02-kitten'),'vertical ignored');
+  await swipe(5,-160); ok(at('03-irish-setter'),'up advances');
+  await tick(400); await swipe(5,160); ok(at('02-kitten'),'down goes back');
+  await tick(400); await swipe(0,24); ok(at('02-kitten'),'short vertical movement ignored');
+  await swipe(0,160,1100); ok(at('02-kitten'),'vertical hold and drag ignored');
+  await tick(400);
   await swipe(100,90); ok(at('02-kitten'),'diagonal ignored');
   await swipe(-140,0,1100); ok(at('02-kitten'),'long hold and drag ignored');
   pointer('pointerdown',250,400);pointer('pointerdown',300,400,2);await tick(200);pointer('pointerup',100,400);pointer('pointerup',150,400,2);await flush();ok(at('02-kitten'),'multi-touch ignored');
@@ -54,9 +58,12 @@ async function appTests() {
   await tick(30000);ok(at('06-goat'),'automatic transition restarts countdown');
   document.hidden=true;document.dispatch('visibilitychange');await tick(180000);ok(at('06-goat'),'background pauses timer');
   document.hidden=false;document.dispatch('visibilitychange');await tick(29000);ok(at('06-goat'),'return has no cascade');await tick(1000);ok(at('07-lamb'),'return starts fresh 30 seconds');
-  await tick(400);pointer('pointerdown',250,400);await tick(200);pointer('pointermove',250,500);pointer('pointerup',100,400);await flush();ok(at('07-lamb'),'vertical-start gesture cannot become horizontal');
+  await tick(400);pointer('pointerdown',250,400);await tick(200);pointer('pointermove',250,500);pointer('pointerup',100,400);await flush();ok(at('07-lamb'),'gesture cannot switch axes at release');
   for(let i=0;i<58;i++){await tick(400);await swipe(-140);assert(decodedCache.size<=3,'decoded image cache must stay bounded');}
   ok(decodedCache.size<=3,'full-gallery traversal retains at most three decoded images');
+  await tick(400); await swipe(0,160); ok(at('06-goat'),'down wraps to preceding photo after full traversal');
+  await tick(400); pointer('pointerdown',250,400); await tick(100); pointer('pointermove',100,400); pointer('pointermove',250,560); pointer('pointerup',250,560); await flush(); ok(at('06-goat'),'bent horizontal-to-vertical gesture ignored');
+  await tick(400); pointer('pointerdown',250,400); pointer('pointerdown',250,500,2); await tick(200); pointer('pointerup',250,200); pointer('pointerup',250,300,2); await flush(); ok(at('06-goat'),'vertical multitouch ignored');
   const evt={preventDefault(){this.prevented=true;}};document.dispatch('contextmenu',evt);ok(evt.prevented,'context menu blocked');
   ok((document.listeners.click||[]).length===0 && (gallery.listeners.click||[]).length===0,'no click navigation handler');
 }

@@ -311,8 +311,13 @@
     if (!gesture || gesture.id !== event.pointerId) return;
     const dx = Math.abs(event.clientX - gesture.x);
     const dy = Math.abs(event.clientY - gesture.y);
-    // A gesture that starts vertically cannot later become a swipe.
-    if (dy > 35 && dy > dx * 1.2) gesture.invalid = true;
+    // Lock a confident gesture to its first axis; a bent gesture is ignored.
+    if (!gesture.axis) {
+      if (dx > 35 && dx >= dy * 1.8) gesture.axis = 'x';
+      else if (dy > 35 && dy >= dx * 1.8) gesture.axis = 'y';
+    }
+    if (gesture.axis === 'x' && dy > 35 && dy > dx * 1.2) gesture.invalid = true;
+    if (gesture.axis === 'y' && dx > 35 && dx > dy * 1.2) gesture.invalid = true;
   });
   gallery.addEventListener('pointerup', event => {
     const start = gesture;
@@ -323,10 +328,15 @@
     const dx = event.clientX - start.x;
     const dy = event.clientY - start.y;
     const elapsed = performance.now() - start.time;
-    const threshold = Math.max(70, Math.min(120, gallery.clientWidth * 0.18));
-    if (elapsed < 90 || elapsed > 900 || Math.abs(dx) < threshold || Math.abs(dx) < Math.abs(dy) * 1.8) return;
+    const axis = Math.abs(dx) >= Math.abs(dy) * 1.8 ? 'x'
+      : Math.abs(dy) >= Math.abs(dx) * 1.8 ? 'y' : null;
+    if (!axis || (start.axis && start.axis !== axis)) return;
+    const distance = axis === 'x' ? dx : dy;
+    const size = axis === 'x' ? gallery.clientWidth : gallery.clientHeight;
+    const threshold = Math.max(70, Math.min(120, size * 0.18));
+    if (elapsed < 90 || elapsed > 900 || Math.abs(distance) < threshold) return;
     if (performance.now() - lastChange < COOLDOWN_MS || changing) return;
-    change(dx < 0 ? 1 : -1);
+    change(distance < 0 ? 1 : -1);
   });
   const cancelPointer = event => {
     pointers.delete(event.pointerId);

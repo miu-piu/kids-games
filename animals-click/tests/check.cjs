@@ -47,7 +47,7 @@ const server = http.createServer((req,res) => {
     const keys=await caches.keys(); const key=keys.find(k=>k.startsWith('animals-click:'));
     return (await (await caches.open(key)).keys()).map(r=>r.url);
   });
-  check(cached.length===17 && cached.filter(u=>u.endsWith('.webp')).length===9,'all app assets and nine images cached');
+  check(cached.length===66 && cached.filter(u=>u.endsWith('.webp')).length===58,'all app assets and 58 images cached');
   const install=await cdp.send('Page.getInstallabilityErrors');
   check(install.installabilityErrors.length===0,'Chromium installability checks');
   await gesture(0); check((await current()).includes('02-kitten'),'tap does nothing');
@@ -58,16 +58,16 @@ const server = http.createServer((req,res) => {
   await touch('touchStart',[[240,400,1],[290,400,2]]); await page.clock.runFor(200);
   await touch('touchMove',[[100,400,1],[150,400,2]]); await touch('touchEnd',[]);
   check((await current()).includes('02-kitten'),'multitouch ignored');
-  await gesture(-140); await expectSlide('03-corgi'); console.log('PASS left swipe');
-  await gesture(-140); check((await current()).includes('03-corgi'),'rapid repeat suppressed');
+  await gesture(-140); await expectSlide('03-irish-setter'); console.log('PASS left swipe');
+  await gesture(-140); check((await current()).includes('03-irish-setter'),'rapid repeat suppressed');
   await page.clock.runFor(400); await gesture(140); await expectSlide('02-kitten'); console.log('PASS right swipe');
-  await page.clock.runFor(400); await gesture(140); await expectSlide('10-hedgehog'); console.log('PASS first to last wrap');
+  await page.clock.runFor(400); await gesture(140); await expectSlide('59-ladybird'); console.log('PASS first to last wrap');
   await page.clock.runFor(400); await gesture(-140); await expectSlide('02-kitten'); console.log('PASS last to first wrap');
   // Exact 30-second timer, including a tap just before expiration.
   await page.reload(); await page.waitForFunction(()=>document.querySelector('img').complete);
   await page.clock.runFor(29000); await gesture(0,0,150);
   check((await current()).includes('02-kitten'),'no automatic transition before 30 seconds');
-  await page.clock.runFor(1000); await expectSlide('03-corgi'); console.log('PASS 30-second transition; tap does not reset timer');
+  await page.clock.runFor(1000); await expectSlide('03-irish-setter'); console.log('PASS 30-second transition; tap does not reset timer');
   await page.clock.runFor(29000); await gesture(-140); await expectSlide('04-rabbit');
   await page.clock.runFor(1000); check((await current()).includes('04-rabbit'),'manual swipe resets timer');
   await page.clock.runFor(29000); await expectSlide('05-calf'); console.log('PASS new 30-second countdown after manual swipe');
@@ -81,17 +81,17 @@ const server = http.createServer((req,res) => {
   const attempts=[]; page.on('request',r=>attempts.push(r.url()));
   await context.setOffline(true);
   await page.reload(); await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
-  for(let i=0;i<9;i++) {
+  for(let i=0;i<58;i++) {
     await page.clock.runFor(400); await gesture(-140);
     await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
   }
-  check((await current()).includes('02-kitten'),'complete nine-image cycle offline after reload');
+  check((await current()).includes('02-kitten'),'complete 58-image cycle offline after reload');
   await page.goto(base+'offline-fallback'); await page.waitForFunction(()=>document.querySelector('img').naturalWidth>0);
   check((await current()).includes('02-kitten'),'offline navigation fallback');
   check(attempts.every(u=>u.startsWith(base)),'no external requests');
   // Capture all crops on a tall phone; inspection checks limbs and composition.
   await page.goto(base);
-  for(let i=0;i<9;i++) {
+  for(let i=0;i<58;i++) {
     await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
     await page.clock.runFor(400);
     await page.screenshot({path:path.join(output,`phone-${i+1}.png`)});

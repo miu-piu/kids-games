@@ -18,7 +18,9 @@ async function appTests() {
   const image={src:'./assets/images/02-kitten.webp',style:{},getAnimations(){return [];},animate(){}};
   const document=surface({hidden:false,getElementById:id=>id==='gallery'?gallery:image});
   const window=surface();
-  const sandbox={document,window,performance:{now:()=>now},Image:class{decode(){return Promise.resolve();}},matchMedia:()=>({matches:false}),navigator:{},console,
+  let decodedCache;
+  class DecodeMap extends Map { constructor(){super();decodedCache=this;} }
+  const sandbox={Map:DecodeMap,document,window,performance:{now:()=>now},Image:class{decode(){return Promise.resolve();}},matchMedia:()=>({matches:false}),navigator:{},console,
     setTimeout(fn,ms){let id=++sequence;timers.set(id,{fn,due:now+ms});return id;},clearTimeout(id){timers.delete(id);}};
   vm.runInNewContext(fs.readFileSync(path.join(root,'app.js'),'utf8'),sandbox);
   async function tick(ms) {
@@ -36,14 +38,14 @@ async function appTests() {
   await swipe(-140,0,1100); ok(at('02-kitten'),'long hold and drag ignored');
   pointer('pointerdown',250,400);pointer('pointerdown',300,400,2);await tick(200);pointer('pointerup',100,400);pointer('pointerup',150,400,2);await flush();ok(at('02-kitten'),'multi-touch ignored');
   pointer('pointerdown',250,400);await tick(200);pointer('pointercancel',100,400);pointer('pointerup',100,400);await flush();ok(at('02-kitten'),'cancelled gesture ignored');
-  await swipe(-140);ok(at('03-corgi'),'left advances');
-  pointer('pointerup',100,400);await flush();ok(at('03-corgi'),'duplicate pointerup ignored');
-  await swipe(-140);ok(at('03-corgi'),'rapid repeat suppressed');
+  await swipe(-140);ok(at('03-irish-setter'),'left advances');
+  pointer('pointerup',100,400);await flush();ok(at('03-irish-setter'),'duplicate pointerup ignored');
+  await swipe(-140);ok(at('03-irish-setter'),'rapid repeat suppressed');
   await tick(400);await swipe(140);ok(at('02-kitten'),'right goes back');
-  await tick(400);await swipe(140);ok(at('10-hedgehog'),'first wraps to last');
+  await tick(400);await swipe(140);ok(at('59-ladybird'),'first wraps to last');
   await tick(400);await swipe(-140);ok(at('02-kitten'),'last wraps to first');
   await tick(29000);await swipe(0,0,150);ok(at('02-kitten'),'no transition before 30 seconds');
-  await tick(850);ok(at('03-corgi'),'automatic transition at 30 seconds; tap did not reset');
+  await tick(850);ok(at('03-irish-setter'),'automatic transition at 30 seconds; tap did not reset');
   await tick(29000);await swipe(-140);ok(at('04-rabbit'),'manual transition near expiration');
   await tick(1000);ok(at('04-rabbit'),'manual swipe resets timer');
   await tick(29000);ok(at('05-calf'),'new countdown is 30 seconds');
@@ -51,6 +53,8 @@ async function appTests() {
   document.hidden=true;document.dispatch('visibilitychange');await tick(180000);ok(at('06-goat'),'background pauses timer');
   document.hidden=false;document.dispatch('visibilitychange');await tick(29000);ok(at('06-goat'),'return has no cascade');await tick(1000);ok(at('07-lamb'),'return starts fresh 30 seconds');
   await tick(400);pointer('pointerdown',250,400);await tick(200);pointer('pointermove',250,500);pointer('pointerup',100,400);await flush();ok(at('07-lamb'),'vertical-start gesture cannot become horizontal');
+  for(let i=0;i<58;i++){await tick(400);await swipe(-140);assert(decodedCache.size<=3,'decoded image cache must stay bounded');}
+  ok(decodedCache.size<=3,'full-gallery traversal retains at most three decoded images');
   const evt={preventDefault(){this.prevented=true;}};document.dispatch('contextmenu',evt);ok(evt.prevented,'context menu blocked');
   ok((document.listeners.click||[]).length===0 && (gallery.listeners.click||[]).length===0,'no click navigation handler');
 }
@@ -67,8 +71,8 @@ async function swTests() {
   async function lifecycle(name){let pending;self.dispatch(name,{waitUntil(p){pending=p;}});await pending;}
   await lifecycle('install');ok(skipped,'SW activates only after precache succeeds');
   const cache=[...entries].find(([name])=>name.startsWith('animals-click:'))[1];
-  ok(cache.size===17,'17 precached routes/files');
-  ok([...cache.keys()].filter(url=>url.endsWith('.webp')).length===9,'all nine images cached');
+  ok(cache.size===66,'66 precached routes/files');
+  ok([...cache.keys()].filter(url=>url.endsWith('.webp')).length===58,'all 58 images cached');
   await lifecycle('activate');ok(claimed && entries.has('speech-games:v1'),'SW claims clients and preserves other game caches');
   offline=true;
   async function request(url,mode='cors'){let result;self.dispatch('fetch',{request:{url,method:'GET',mode},respondWith(p){result=p;}});return result && await result;}

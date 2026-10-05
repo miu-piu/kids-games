@@ -1,11 +1,240 @@
 'use strict';
 (() => {
+  const positions = { '11-squirrel': '70% 50%', '17-lynx': '100% 50%', '19-amur-leopard': '70% 50%', '20-tiger': '100% 50%', '31-tit': '70% 50%', '33-crow': '80% 50%', '50-walrus': '50% 50%', '53-lizard': '70% 50%', '58-dragonfly': '20% 50%', '18-chipmunk': '0% 50%', '41-whale': '60% 50%', '40-swan': '70% 50%', '38-cuckoo': '80% 50%', '35-pigeon': '45% 50%' };
   const slides = [
-    ['02-kitten', 'Kitten'], ['03-corgi', 'Corgi puppy'],
-    ['04-rabbit', 'Rabbit'], ['05-calf', 'Calf'], ['06-goat', 'Young goat'],
-    ['07-lamb', 'Lamb'], ['08-chick', 'Chick'],
-    ['09-duckling', 'Duckling'], ['10-hedgehog', 'Hedgehog']
-  ].map(([name, alt]) => ({ src: `./assets/images/${name}.webp`, alt, position: '50% 50%' }));
+  [
+    "02-kitten",
+    "Kitten"
+  ],
+  [
+    "03-irish-setter",
+    "Irish red setter puppy"
+  ],
+  [
+    "04-rabbit",
+    "Rabbit"
+  ],
+  [
+    "05-calf",
+    "Calf"
+  ],
+  [
+    "06-goat",
+    "Young goat"
+  ],
+  [
+    "07-lamb",
+    "Lamb"
+  ],
+  [
+    "08-chick",
+    "Chick"
+  ],
+  [
+    "09-duckling",
+    "Duckling"
+  ],
+  [
+    "10-hedgehog",
+    "Hedgehog"
+  ],
+  [
+    "11-squirrel",
+    "Red squirrel"
+  ],
+  [
+    "12-ferret",
+    "Ferret"
+  ],
+  [
+    "13-fox",
+    "Fox cub"
+  ],
+  [
+    "14-raccoon",
+    "Raccoon kit"
+  ],
+  [
+    "15-fawn",
+    "Fawn"
+  ],
+  [
+    "16-bear",
+    "Bear cub"
+  ],
+  [
+    "17-lynx",
+    "Lynx kitten"
+  ],
+  [
+    "18-chipmunk",
+    "Chipmunk"
+  ],
+  [
+    "19-amur-leopard",
+    "Amur leopard cub"
+  ],
+  [
+    "20-tiger",
+    "Tiger cub"
+  ],
+  [
+    "21-lion",
+    "Lion cub"
+  ],
+  [
+    "22-elephant",
+    "Elephant calf"
+  ],
+  [
+    "23-giraffe",
+    "Giraffe calf"
+  ],
+  [
+    "24-zebra",
+    "Zebra foal"
+  ],
+  [
+    "25-camel",
+    "Camel calf"
+  ],
+  [
+    "26-capybara",
+    "Capybara pup"
+  ],
+  [
+    "27-alpaca",
+    "Alpaca cria"
+  ],
+  [
+    "28-panda",
+    "Panda cub"
+  ],
+  [
+    "29-hippo",
+    "Hippopotamus calf"
+  ],
+  [
+    "30-rhino",
+    "Rhinoceros calf"
+  ],
+  [
+    "31-tit",
+    "Great tit"
+  ],
+  [
+    "32-owl",
+    "Owlet"
+  ],
+  [
+    "33-crow",
+    "Crow"
+  ],
+  [
+    "34-magpie",
+    "Magpie"
+  ],
+  [
+    "35-pigeon",
+    "Pigeon"
+  ],
+  [
+    "36-flamingo",
+    "Flamingo"
+  ],
+  [
+    "37-hummingbird",
+    "Hummingbird"
+  ],
+  [
+    "38-cuckoo",
+    "Cuckoo chick"
+  ],
+  [
+    "39-peacock",
+    "Peacock"
+  ],
+  [
+    "40-swan",
+    "Adult white swan"
+  ],
+  [
+    "41-whale",
+    "Whale calf"
+  ],
+  [
+    "42-shark",
+    "Shark pup"
+  ],
+  [
+    "43-penguin",
+    "Penguin chick"
+  ],
+  [
+    "44-seal",
+    "Seal pup"
+  ],
+  [
+    "45-dolphin",
+    "Dolphin calf"
+  ],
+  [
+    "46-octopus",
+    "Small octopus"
+  ],
+  [
+    "47-seahorse",
+    "Seahorse"
+  ],
+  [
+    "48-crab",
+    "Crab"
+  ],
+  [
+    "49-ray",
+    "Young stingray"
+  ],
+  [
+    "50-walrus",
+    "Walrus calf"
+  ],
+  [
+    "51-jellyfish",
+    "Jellyfish"
+  ],
+  [
+    "52-snake",
+    "Snake"
+  ],
+  [
+    "53-lizard",
+    "Lizard"
+  ],
+  [
+    "54-butterfly",
+    "Butterfly"
+  ],
+  [
+    "55-bee",
+    "Bee"
+  ],
+  [
+    "56-snail",
+    "Snail"
+  ],
+  [
+    "57-lemur",
+    "Lemur infant"
+  ],
+  [
+    "58-dragonfly",
+    "Dragonfly"
+  ],
+  [
+    "59-ladybird",
+    "Ladybird"
+  ]
+].map(([name, alt]) => ({ src: `./assets/images/${name}.webp`, alt, position: positions[name] || '50% 50%' }));
   const gallery = document.getElementById('gallery');
   const image = document.getElementById('animal');
   const AUTO_MS = 30_000;
@@ -33,6 +262,9 @@
     return loaded.get(src);
   }
   function warmNeighbours() {
+    // Retain only current/adjacent decoded images, never the entire gallery.
+    const nearby = new Set([index, wrap(index + 1), wrap(index - 1)].map(i => slides[i].src));
+    for (const src of loaded.keys()) if (!nearby.has(src)) loaded.delete(src);
     preload(index + 1).catch(() => {});
     preload(index - 1).catch(() => {});
   }

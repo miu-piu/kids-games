@@ -1,0 +1,949 @@
+{
+  "slides": [
+    [
+      "02-kitten",
+      "Kitten"
+    ],
+    [
+      "03-irish-setter",
+      "Irish red setter puppy"
+    ],
+    [
+      "04-rabbit",
+      "Rabbit"
+    ],
+    [
+      "05-calf",
+      "Calf"
+    ],
+    [
+      "06-goat",
+      "Young goat"
+    ],
+    [
+      "07-lamb",
+      "Lamb"
+    ],
+    [
+      "08-chick",
+      "Chick"
+    ],
+    [
+      "09-duckling",
+      "Duckling"
+    ],
+    [
+      "10-hedgehog",
+      "Hedgehog"
+    ],
+    [
+      "11-squirrel",
+      "Red squirrel"
+    ],
+    [
+      "12-ferret",
+      "Ferret"
+    ],
+    [
+      "13-fox",
+      "Fox cub"
+    ],
+    [
+      "14-raccoon",
+      "Raccoon kit"
+    ],
+    [
+      "15-fawn",
+      "Fawn"
+    ],
+    [
+      "16-bear",
+      "Bear cub"
+    ],
+    [
+      "17-lynx",
+      "Lynx kitten"
+    ],
+    [
+      "18-chipmunk",
+      "Chipmunk"
+    ],
+    [
+      "19-amur-leopard",
+      "Amur leopard cub"
+    ],
+    [
+      "20-tiger",
+      "Tiger cub"
+    ],
+    [
+      "21-lion",
+      "Lion cub"
+    ],
+    [
+      "22-elephant",
+      "Elephant calf"
+    ],
+    [
+      "23-giraffe",
+      "Giraffe calf"
+    ],
+    [
+      "24-zebra",
+      "Zebra foal"
+    ],
+    [
+      "25-camel",
+      "Camel calf"
+    ],
+    [
+      "26-capybara",
+      "Capybara pup"
+    ],
+    [
+      "27-alpaca",
+      "Alpaca cria"
+    ],
+    [
+      "28-panda",
+      "Panda cub"
+    ],
+    [
+      "29-hippo",
+      "Hippopotamus calf"
+    ],
+    [
+      "30-rhino",
+      "Rhinoceros calf"
+    ],
+    [
+      "31-tit",
+      "Great tit"
+    ],
+    [
+      "32-owl",
+      "Owlet"
+    ],
+    [
+      "33-crow",
+      "Crow"
+    ],
+    [
+      "34-magpie",
+      "Magpie"
+    ],
+    [
+      "35-pigeon",
+      "Pigeon"
+    ],
+    [
+      "36-flamingo",
+      "Flamingo"
+    ],
+    [
+      "37-hummingbird",
+      "Hummingbird"
+    ],
+    [
+      "38-cuckoo",
+      "Cuckoo chick"
+    ],
+    [
+      "39-peacock",
+      "Peacock"
+    ],
+    [
+      "40-swan",
+      "Adult white swan"
+    ],
+    [
+      "41-whale",
+      "Whale calf"
+    ],
+    [
+      "42-shark",
+      "Shark pup"
+    ],
+    [
+      "43-penguin",
+      "Penguin chick"
+    ],
+    [
+      "44-seal",
+      "Seal pup"
+    ],
+    [
+      "45-dolphin",
+      "Dolphin calf"
+    ],
+    [
+      "46-octopus",
+      "Small octopus"
+    ],
+    [
+      "47-seahorse",
+      "Seahorse"
+    ],
+    [
+      "48-crab",
+      "Crab"
+    ],
+    [
+      "49-ray",
+      "Young stingray"
+    ],
+    [
+      "50-walrus",
+      "Walrus calf"
+    ],
+    [
+      "51-jellyfish",
+      "Jellyfish"
+    ],
+    [
+      "52-snake",
+      "Snake"
+    ],
+    [
+      "53-lizard",
+      "Lizard"
+    ],
+    [
+      "54-butterfly",
+      "Butterfly"
+    ],
+    [
+      "55-bee",
+      "Bee"
+    ],
+    [
+      "56-snail",
+      "Snail"
+    ],
+    [
+      "57-lemur",
+      "Lemur infant"
+    ],
+    [
+      "58-dragonfly",
+      "Dragonfly"
+    ],
+    [
+      "59-ladybird",
+      "Ladybird"
+    ]
+  ],
+  "initialCommon": "Use case: photorealistic-natural. ONE separate final vertical9:16 premium photorealistic animal photograph for a child's fullscreen gallery. Exactly ONE animal, full entire body, all limbs wings fins tail ears antennae visible, accurate anatomy and natural proportions, normal size head and eyes. LARGE ANIMAL CLOSE FULL-BODY COMPOSITION: the animal's leftmost to rightmost extremities span about72% of the image width, centered horizontally, reserve14% background at each side to permit a20:9 smartphone cover crop where animal then fills90% of screen width. Height follows real proportions, do not shrink subject to fill a small fixed height. Entire body must fit within frame with comfortable top and bottom margin; no distant tiny subject. Landscape background beautiful and detailed but softly defocused, use true lens bokeh. Natural appropriate warm light, rich realistic fur feathers scales textures, clean healthy eyes, peaceful curiosity and subtle natural catchlights. No same generic standing three-quarter pose: use the specific varied pose requested. No humans, extra animals, text, logos, watermarks, sparkle icons, borders, giant eyes, human smiles, Disney, anime, toy CGI, injury, blood, aggression. Scene and exact pose:  MANDATORY GAZE: subject faces the camera with a gentle natural direct gaze toward the viewer. Body pose varies, but head turns toward the lens and visible eyes focus on camera. No looking away, down or into distance. For side-eyed species orient naturally toward lens; NEVER invent human eyes. For jellyfish which have no eyes use natural frontal presentation without invented eyes.  Crop safety is essential: leftmost animal part must stay at x>=14% and rightmost at x<=86% of image width. Never touch frame edges; do not crop any tail or paw.",
+  "initialScenes": [
+    [
+      "11-squirrel",
+      "Red squirrel",
+      "One Eurasian red squirrel in full lateral profile along a horizontal mossy tree branch, front paws planted and looking back gently toward camera, bushy tail arched above its back, warm oak woodland, a few hazelnuts. Tight full-body animal portrait, NOT panoramic landscape."
+    ],
+    [
+      "12-ferret",
+      "Ferret",
+      "One sable ferret stretched horizontally across mossy tree roots, paws planted, elongated side-on body and whole tail, head lifted and turned directly toward camera with eye contact, softly lit fern woodland behind."
+    ],
+    [
+      "13-fox",
+      "Fox cub",
+      "One red fox cub sitting facing almost straight toward camera, ears upright, bushy tail curled alongside front paws, woodland clearing, low soft grass, warm sunlight. Tight full-body animal portrait."
+    ],
+    [
+      "14-raccoon",
+      "Raccoon kit",
+      "One raccoon kit crouching on a mossy stone beside a forest creek, forepaws near water, head lifted and turned directly toward camera with eye contact, whole ringed tail curled beside body."
+    ],
+    [
+      "15-fawn",
+      "Fawn",
+      "One spotted deer fawn lying peacefully with all four legs naturally folded under body, three-quarter side view, head turned gently toward camera, sunny grass forest glade and young birches, legs unobscured by grass. Tight full-body animal portrait."
+    ],
+    [
+      "16-bear",
+      "Bear cub",
+      "One brown bear cub standing on a forest clearing, fallen logs, stumps, berries, conifers. Specific pose: Sitting upright, hind legs naturally splayed, front paws on ground, face directly toward camera."
+    ],
+    [
+      "17-lynx",
+      "Lynx kitten",
+      "One Eurasian lynx kitten, natural tufted ears and short tail, standing on a mossy northern conifer forest floor, stump and ferns. Specific pose: Lying on a mossy log, forepaws extended, head up facing camera."
+    ],
+    [
+      "18-chipmunk",
+      "Chipmunk",
+      "One Siberian chipmunk sitting beside cones and nuts on a mossy log, woodland litter. Specific pose: Sitting upright holding one nut with front paws, face toward camera, striped body and whole tail visible."
+    ],
+    [
+      "19-amur-leopard",
+      "Amur leopard cub",
+      "One Amur leopard cub, real rosette coat pattern, standing on mossy rocks in temperate Far Eastern forest, wooded hills, cool filtered forest sunlight. Specific pose: Standing sideways on a broad mossy stone, head turned toward lens."
+    ],
+    [
+      "20-tiger",
+      "Tiger cub",
+      "One Amur (Siberian) tiger cub with thick fluffy orange winter fur and black stripes, lying sphinx-like on a broad mossy fallen log, front paws extended, complete body hindquarters and whole tail curled visibly beside flank. Head raised facing camera, direct calm eye contact, mouth closed. Habitat is Russian Far Eastern temperate mixed forest, Korean pines, birches, autumn leaves, moss and ferns, cool fresh air with warm golden sun patches. NO tropical plants, NO bamboo, NO jungle. Natural real tiger cub proportions, not cartoon."
+    ],
+    [
+      "21-lion",
+      "Lion cub",
+      "One lion cub standing in savanna, golden grass, distant acacia, warm sky. Specific pose: Sitting with one forepaw slightly lifted, face toward lens."
+    ],
+    [
+      "22-elephant",
+      "Elephant calf",
+      "One African elephant calf standing on a savanna dirt path, acacias and wide landscape. Specific pose: Walking slowly toward lens, one forefoot gently lifted, trunk hanging in a soft curve."
+    ],
+    [
+      "23-giraffe",
+      "Giraffe calf",
+      "One giraffe calf standing on open savanna, natural long neck and legs, tall grass and sparse trees. Specific pose: Standing in slight side view, head inclined toward camera, long legs complete."
+    ],
+    [
+      "24-zebra",
+      "Zebra foal",
+      "One zebra foal standing on savanna grassland, bright sky and distant empty plain. No herd: exactly one animal. Specific pose: Lying in low grass, legs folded naturally, head raised toward camera."
+    ],
+    [
+      "25-camel",
+      "Camel calf",
+      "One dromedary camel calf standing beside sandy desert dunes, warm soft sand. Specific pose: Kneeling/resting on sand with legs folded, head toward lens."
+    ],
+    [
+      "26-capybara",
+      "Capybara pup",
+      "One young capybara standing on a riverbank among reeds and humid tropical greenery. Specific pose: Sitting at river edge, face toward lens."
+    ],
+    [
+      "27-alpaca",
+      "Alpaca cria",
+      "One alpaca cria standing on mountain pasture, grassy hills and crisp soft daylight. Specific pose: Standing almost frontal with head slightly tilted naturally toward lens."
+    ],
+    [
+      "28-panda",
+      "Panda cub",
+      "One giant panda cub sitting in a lush bamboo grove, humid green forest. Specific pose: Sitting holding one bamboo shoot, facing lens."
+    ],
+    [
+      "29-hippo",
+      "Hippopotamus calf",
+      "One hippopotamus calf standing ankle deep at a calm river edge, dense riverbank vegetation. Specific pose: Standing in shallow water at slight side angle, eyes turned toward lens."
+    ],
+    [
+      "30-rhino",
+      "Rhinoceros calf",
+      "One white rhinoceros calf standing on dusty savanna, scrub and warm sun; small developing horn appropriate to age. Specific pose: Standing laterally, head turned toward camera."
+    ],
+    [
+      "31-tit",
+      "Great tit",
+      "One great tit bird perched on a flowering spring garden twig, entire bird and tail visible. Specific pose: Perched on thin blossom twig, body angled sideways, head turned toward lens."
+    ],
+    [
+      "32-owl",
+      "Owlet",
+      "One fluffy young owl perched on a broad branch beside a tree hollow, woodland at dusk, gentle evening light. Specific pose: Standing on a thick branch, face directly toward lens."
+    ],
+    [
+      "33-crow",
+      "Crow",
+      "One hooded crow perched on a wooden fence, quiet leafy park, soft overcast sky. Specific pose: Perched on fence, wings folded, head turned toward lens."
+    ],
+    [
+      "34-magpie",
+      "Magpie",
+      "One Eurasian magpie perched on a branch at a green forest edge, entire long tail visible, sun flecks. Specific pose: Perched on a branch, whole tail angled down, head turned toward lens."
+    ],
+    [
+      "35-pigeon",
+      "Pigeon",
+      "One rock pigeon standing on park cobblestones, blurred empty fountain and benches, no people. Specific pose: Standing almost front-on, head gently turned toward lens."
+    ],
+    [
+      "36-flamingo",
+      "Flamingo",
+      "One adult pink flamingo standing in shallow lagoon water, reflection and bright sky, entire neck and long legs visible. Specific pose: Standing on one leg naturally, body side on, curved neck bringing head and eye toward lens."
+    ],
+    [
+      "37-hummingbird",
+      "Hummingbird",
+      "One hummingbird hovering beside vivid tropical flowers, whole bird, both natural wings and beak visible, realistic nature photography. Specific pose: Hovering at a slight frontal angle facing lens, wings naturally spread."
+    ],
+    [
+      "38-cuckoo",
+      "Cuckoo chick",
+      "One young common cuckoo chick alone in a nest on a branch, young forest leaves and soft morning light; no other birds or eggs. Specific pose: Sitting alone in nest, looking into lens, beak closed."
+    ],
+    [
+      "39-peacock",
+      "Peacock",
+      "One adult male Indian peacock standing facing camera with magnificent entire train fully spread as a broad symmetrical upright circular fan. All feather tips and both outer edges completely visible, NOT clipped or cropped. The WHOLE fan bounding box must be between x=18% and82% of image width, leaving generous clearly visible garden background on both left and right sides. Camera pulled back specifically to fit the ENTIRE fan. Feet crest and complete body visible. Iridescent emerald turquoise bronze eyespots natural. Beautiful softly focused flowering manor garden, warm sun, natural eye contact. No other birds."
+    ],
+    [
+      "40-swan",
+      "Adult white swan",
+      "One adult white mute swan gracefully floating on a calm lake, beautiful naturally curved long neck and snowy white plumage, orange beak with natural black basal knob, both eyes/head oriented toward camera for a gentle direct gaze. Body at a slight side angle, complete body tail and folded wings visible, soft reflection, water lilies and reeds, warm morning light. NOT grey chick, NOT cygnet. Real elegant adult proportions, no extra birds."
+    ],
+    [
+      "41-whale",
+      "Whale calf",
+      "One humpback whale calf seen completely underwater from a gentle side angle, entire streamlined body, flippers and tail visible against open blue-green ocean and sunlight rays. Specific pose: Swimming in a slight diagonal three-quarter underwater view, natural near-side eye visible directed toward camera, entire tail and flippers included."
+    ],
+    [
+      "42-shark",
+      "Shark pup",
+      "One juvenile blacktip reef shark swimming gently in an oblique frontal three-quarter view toward camera, entire body, every fin and whole tail visible, calm closed mouth and naturally directed eyes, not cartoon. Clean readable smooth grey upper body and creamy white underside, dark fin tips. BACKGROUND QUIET AND LOW CONTRAST: clear uniform softly graduated muted turquoise-blue water, softly blurred pale sandy lagoon floor far below, no visible coral detail behind animal, no busy textures, no bright ripples, NO dappled caustic patterns or glitter on shark skin. Broad soft diffuse underwater lighting, gentle highlight only, strong natural tonal separation and readable complete outline against water. No dramatic rays or specular glare."
+    ],
+    [
+      "43-penguin",
+      "Penguin chick",
+      "One fluffy emperor penguin chick standing on snow and ice, Antarctic coast, distant southern ocean. Specific pose: Standing face on with flippers slightly spread, looking at lens."
+    ],
+    [
+      "44-seal",
+      "Seal pup",
+      "One fluffy white harp seal pup resting on snowy sea ice, whole body and all flippers visible, cold blue sea. Specific pose: Resting belly-down, front flippers naturally splayed, head lifted facing lens."
+    ],
+    [
+      "45-dolphin",
+      "Dolphin calf",
+      "One bottlenose dolphin calf swimming gently in a diagonal three-quarter view toward camera, natural visible eyes oriented toward lens, entire streamlined body, all fins and whole tail visible. Natural smooth grey skin and pale underside; broad diffuse underwater illumination with ONLY soft continuous shading, NO sunlight ripple patterns on skin, NO caustics, NO speckled specular highlights, NO glare. Quiet clear blue water, softly blurred pale seafloor well below, low-contrast distant background. Dolphin silhouette clearly separates from water, calm realistic photo."
+    ],
+    [
+      "46-octopus",
+      "Small octopus",
+      "One small octopus resting naturally on seafloor rocks beside coral and algae, entire mantle and all eight anatomically correct arms comfortably in frame. Specific pose: Resting across a rock with mantle raised, one natural eye facing camera, all eight arms in a relaxed fan."
+    ],
+    [
+      "47-seahorse",
+      "Seahorse",
+      "One seahorse clinging with curled tail to a blade of underwater seagrass, reef and soft sun rays, natural macro photo. Specific pose: Upright with tail curled around seagrass, face and natural eye turned toward lens."
+    ],
+    [
+      "48-crab",
+      "Crab",
+      "One small crab standing on wet beach sand, shells, stones and soft surf; full body all legs and claws visible. Specific pose: Facing lens on sand, claws held relaxed, whole legs visible."
+    ],
+    [
+      "49-ray",
+      "Young stingray",
+      "One young stingray gliding above a sandy lagoon floor, entire disc, fins and long tail visible, soft underwater light rays. Specific pose: Gliding toward lens at a slight elevated viewpoint so upper-side natural eyes and entire tail visible."
+    ],
+    [
+      "50-walrus",
+      "Walrus calf",
+      "One walrus calf resting on Arctic rocky coast beside sea ice and cold water; whole body flippers visible, short undeveloped tusks age appropriate. Specific pose: Resting belly down, foreflippers splayed, head toward lens."
+    ],
+    [
+      "51-jellyfish",
+      "Jellyfish",
+      "One translucent moon jellyfish floating in open water, entire bell and all short oral arms visible, natural sunlight rays, subtle translucent glow. Specific pose: Frontal natural presentation of translucent jellyfish, no fabricated eyes."
+    ],
+    [
+      "52-snake",
+      "Snake",
+      "One harmless corn snake with natural reddish patterned scales loosely coiled on warm rocks beside grass and leafy forest edge, whole head and entire tail visible, calm closed mouth. Specific pose: Loosely coiled, head gently raised toward camera, mouth closed."
+    ],
+    [
+      "53-lizard",
+      "Lizard",
+      "One small green lizard standing on a sunny stone among sand and dry grass; all four legs and whole long tail visible. Specific pose: Standing sideways on stone, head turned toward lens."
+    ],
+    [
+      "54-butterfly",
+      "Butterfly",
+      "One butterfly resting with wings open on a bright meadow flower, warm sunshine, whole wings legs and antennae visible. Specific pose: Perched on flower facing lens, wings open symmetrically, natural insect compound eyes."
+    ],
+    [
+      "55-bee",
+      "Bee",
+      "One honeybee resting on a lavender blossom, garden pollen and sunlight, complete insect natural six legs, antennae and wings visible. Specific pose: Facing lens on lavender bloom, body in slight side angle, natural insect eyes."
+    ],
+    [
+      "56-snail",
+      "Snail",
+      "One garden snail moving on a broad green leaf covered in dew after rain, full shell foot and four natural tentacles visible. Specific pose: Moving toward lens, head raised with natural eye stalks directed toward camera."
+    ],
+    [
+      "57-lemur",
+      "Lemur infant",
+      "One young ring-tailed lemur sitting on a tropical branch among vines and leaves, entire striped tail and four limbs visible. Specific pose: Sitting sideways on branch, head turned toward lens, tail looped naturally beside body."
+    ],
+    [
+      "58-dragonfly",
+      "Dragonfly",
+      "One dragonfly perched on a reed by a pond, water lilies and soft reeds, four translucent complete wings and whole long abdomen visible. Specific pose: Perched facing lens on reed, four wings naturally spread, natural compound eyes."
+    ],
+    [
+      "59-ladybird",
+      "Ladybird",
+      "One seven-spot ladybird on a green dewy garden leaf, realistic macro lens photograph, entire beetle visible, natural six legs. Specific pose: Facing lens on dewy leaf, slight front angle, natural beetle head and eyes."
+    ]
+  ],
+  "quiet": "Use case: photorealistic-natural. Edit target is the supplied animal photo for a one-year-old child's fullscreen gallery. ONE separate final vertical 9:16 photograph, exactly one realistic healthy animal. NEW ART DIRECTION: immediately legible complete silhouette against extremely quiet natural environment. Almost uniform diffuse softly colored background, no scenic detail, busy ground texture, bright bokeh circles, glitter, flowers, caustic light or sharp objects around subject. At most faint habitat suggestion at extreme outer corners well away from subject. Preserve species realistic anatomy natural textures; no cartoon human expression enlarged eyes artificial smile text logos or watermark. Entire animal large but strictly within central 70% of width: leave15% clear margin on BOTH sides for narrow-phone cropping. All appendages complete. Gentle broad diffuse light, clear tonal separation, no harsh shiny patches. Specific new pose and environment below override original reference pose/background. ",
+  "balanced": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. ",
+  "framing": "Camera zoom out25percent; keep animal within central70% image width, fullbody and extremities, preserve recognizable environment.",
+  "selectedImages": [
+    {
+      "name": "02-kitten",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/02-kitten.png",
+      "webp": "assets/images/02-kitten.webp",
+      "alt": "Kitten"
+    },
+    {
+      "name": "03-irish-setter",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/03-irish-setter.png",
+      "webp": "assets/images/03-irish-setter.webp",
+      "alt": "Irish red setter puppy"
+    },
+    {
+      "name": "04-rabbit",
+      "alt": "Rabbit",
+      "scene": "flowering meadow",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: flowering meadow. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/04-rabbit.png",
+      "webp": "assets/images/04-rabbit.webp"
+    },
+    {
+      "name": "05-calf",
+      "alt": "Calf",
+      "scene": "green pasture and a distant wooden fence",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: green pasture and a distant wooden fence. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/05-calf.png",
+      "webp": "assets/images/05-calf.webp"
+    },
+    {
+      "name": "06-goat",
+      "alt": "Young goat",
+      "scene": "rural grassy hillside with a distant barn",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: rural grassy hillside with a distant barn. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/06-goat.png",
+      "webp": "assets/images/06-goat.webp"
+    },
+    {
+      "name": "07-lamb",
+      "alt": "Lamb",
+      "scene": "spring pasture",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: spring pasture. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/07-lamb.png",
+      "webp": "assets/images/07-lamb.webp"
+    },
+    {
+      "name": "08-chick",
+      "scene": "A fluffy yellow chick standing on a simple thin layer of clean straw in a recognizable warm wooden barn. Behind chick softly visible large wooden boards and barn opening, NOT a green meadow and NOT an empty beige studio. Chick large central70% image width, feet and all body fully visible. Straw sparse and soft, no busy texture or clutter.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. A fluffy yellow chick standing on a simple thin layer of clean straw in a recognizable warm wooden barn. Behind chick softly visible large wooden boards and barn opening, NOT a green meadow and NOT an empty beige studio. Chick large central70% image width, feet and all body fully visible. Straw sparse and soft, no busy texture or clutter.",
+      "original": "assets/images/originals/08-chick.png",
+      "webp": "assets/images/08-chick.webp",
+      "alt": "Chick"
+    },
+    {
+      "name": "09-duckling",
+      "alt": "Duckling",
+      "scene": "quiet pond shore",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: quiet pond shore. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/09-duckling.png",
+      "webp": "assets/images/09-duckling.webp"
+    },
+    {
+      "name": "10-hedgehog",
+      "alt": "Hedgehog",
+      "scene": "soft mossy forest floor",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: soft mossy forest floor. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/10-hedgehog.png",
+      "webp": "assets/images/10-hedgehog.webp"
+    },
+    {
+      "name": "11-squirrel",
+      "alt": "Red squirrel",
+      "scene": "One Eurasian red squirrel in full lateral profile along a horizontal mossy tree branch, front paws planted and looking back gently toward camera, bushy tail arched above its back, warm oak woodland, a few hazelnuts. Tight full-body animal portrait, NOT panoramic landscape.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Eurasian red squirrel in full lateral profile along a horizontal mossy tree branch, front paws planted and looking back gently toward camera, bushy tail arched above its back, warm oak woodland, a few hazelnuts. Tight full-body animal portrait, NOT panoramic landscape.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/11-squirrel.png",
+      "webp": "assets/images/11-squirrel.webp"
+    },
+    {
+      "name": "12-ferret",
+      "alt": "Ferret",
+      "scene": "One sable ferret stretched horizontally across mossy tree roots, paws planted, elongated side-on body and whole tail, head lifted and turned directly toward camera with eye contact, softly lit fern woodland behind.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One sable ferret stretched horizontally across mossy tree roots, paws planted, elongated side-on body and whole tail, head lifted and turned directly toward camera with eye contact, softly lit fern woodland behind.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/12-ferret.png",
+      "webp": "assets/images/12-ferret.webp"
+    },
+    {
+      "name": "13-fox",
+      "alt": "Fox cub",
+      "scene": "One red fox cub sitting facing almost straight toward camera, ears upright, bushy tail curled alongside front paws, woodland clearing, low soft grass, warm sunlight. Tight full-body animal portrait.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One red fox cub sitting facing almost straight toward camera, ears upright, bushy tail curled alongside front paws, woodland clearing, low soft grass, warm sunlight. Tight full-body animal portrait.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/13-fox.png",
+      "webp": "assets/images/13-fox.webp"
+    },
+    {
+      "name": "14-raccoon",
+      "alt": "Raccoon kit",
+      "scene": "One raccoon kit crouching on a mossy stone beside a forest creek, forepaws near water, head lifted and turned directly toward camera with eye contact, whole ringed tail curled beside body.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One raccoon kit crouching on a mossy stone beside a forest creek, forepaws near water, head lifted and turned directly toward camera with eye contact, whole ringed tail curled beside body.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/14-raccoon.png",
+      "webp": "assets/images/14-raccoon.webp"
+    },
+    {
+      "name": "15-fawn",
+      "alt": "Fawn",
+      "scene": "One spotted deer fawn lying peacefully with all four legs naturally folded under body, three-quarter side view, head turned gently toward camera, sunny grass forest glade and young birches, legs unobscured by grass. Tight full-body animal portrait.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One spotted deer fawn lying peacefully with all four legs naturally folded under body, three-quarter side view, head turned gently toward camera, sunny grass forest glade and young birches, legs unobscured by grass. Tight full-body animal portrait.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/15-fawn.png",
+      "webp": "assets/images/15-fawn.webp"
+    },
+    {
+      "name": "16-bear",
+      "alt": "Bear cub",
+      "scene": "One brown bear cub standing on a forest clearing, fallen logs, stumps, berries, conifers. Specific pose: Sitting upright, hind legs naturally splayed, front paws on ground, face directly toward camera.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One brown bear cub standing on a forest clearing, fallen logs, stumps, berries, conifers. Specific pose: Sitting upright, hind legs naturally splayed, front paws on ground, face directly toward camera.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/16-bear.png",
+      "webp": "assets/images/16-bear.webp"
+    },
+    {
+      "name": "17-lynx",
+      "alt": "Lynx kitten",
+      "scene": "One Eurasian lynx kitten, natural tufted ears and short tail, standing on a mossy northern conifer forest floor, stump and ferns. Specific pose: Lying on a mossy log, forepaws extended, head up facing camera.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Eurasian lynx kitten, natural tufted ears and short tail, standing on a mossy northern conifer forest floor, stump and ferns. Specific pose: Lying on a mossy log, forepaws extended, head up facing camera.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/17-lynx.png",
+      "webp": "assets/images/17-lynx.webp"
+    },
+    {
+      "name": "18-chipmunk",
+      "alt": "Chipmunk",
+      "scene": "One Siberian chipmunk sitting beside cones and nuts on a mossy log, woodland litter. Specific pose: Sitting upright holding one nut with front paws, face toward camera, striped body and whole tail visible.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Siberian chipmunk sitting beside cones and nuts on a mossy log, woodland litter. Specific pose: Sitting upright holding one nut with front paws, face toward camera, striped body and whole tail visible.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/18-chipmunk.png",
+      "webp": "assets/images/18-chipmunk.webp"
+    },
+    {
+      "name": "19-amur-leopard",
+      "alt": "Amur leopard cub",
+      "scene": "One Amur leopard cub, real rosette coat pattern, standing on mossy rocks in temperate Far Eastern forest, wooded hills, cool filtered forest sunlight. Specific pose: Standing sideways on a broad mossy stone, head turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Amur leopard cub, real rosette coat pattern, standing on mossy rocks in temperate Far Eastern forest, wooded hills, cool filtered forest sunlight. Specific pose: Standing sideways on a broad mossy stone, head turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/19-amur-leopard.png",
+      "webp": "assets/images/19-amur-leopard.webp"
+    },
+    {
+      "name": "20-tiger",
+      "alt": "Tiger cub",
+      "scene": "One Amur (Siberian) tiger cub with thick fluffy orange winter fur and black stripes, lying sphinx-like on a broad mossy fallen log, front paws extended, complete body hindquarters and whole tail curled visibly beside flank. Head raised facing camera, direct calm eye contact, mouth closed. Habitat is Russian Far Eastern temperate mixed forest, Korean pines, birches, autumn leaves, moss and ferns, cool fresh air with warm golden sun patches. NO tropical plants, NO bamboo, NO jungle. Natural real tiger cub proportions, not cartoon.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Amur (Siberian) tiger cub with thick fluffy orange winter fur and black stripes, lying sphinx-like on a broad mossy fallen log, front paws extended, complete body hindquarters and whole tail curled visibly beside flank. Head raised facing camera, direct calm eye contact, mouth closed. Habitat is Russian Far Eastern temperate mixed forest, Korean pines, birches, autumn leaves, moss and ferns, cool fresh air with warm golden sun patches. NO tropical plants, NO bamboo, NO jungle. Natural real tiger cub proportions, not cartoon.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.Maintain AMUR tiger cub and temperate Far Eastern forest, never tropical bamboo.",
+      "original": "assets/images/originals/20-tiger.png",
+      "webp": "assets/images/20-tiger.webp"
+    },
+    {
+      "name": "21-lion",
+      "alt": "Lion cub",
+      "scene": "One lion cub standing in savanna, golden grass, distant acacia, warm sky. Specific pose: Sitting with one forepaw slightly lifted, face toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One lion cub standing in savanna, golden grass, distant acacia, warm sky. Specific pose: Sitting with one forepaw slightly lifted, face toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/21-lion.png",
+      "webp": "assets/images/21-lion.webp"
+    },
+    {
+      "name": "22-elephant",
+      "alt": "Elephant calf",
+      "scene": "One African elephant calf standing on a savanna dirt path, acacias and wide landscape. Specific pose: Walking slowly toward lens, one forefoot gently lifted, trunk hanging in a soft curve.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One African elephant calf standing on a savanna dirt path, acacias and wide landscape. Specific pose: Walking slowly toward lens, one forefoot gently lifted, trunk hanging in a soft curve.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/22-elephant.png",
+      "webp": "assets/images/22-elephant.webp"
+    },
+    {
+      "name": "23-giraffe",
+      "alt": "Giraffe calf",
+      "scene": "One giraffe calf standing on open savanna, natural long neck and legs, tall grass and sparse trees. Specific pose: Standing in slight side view, head inclined toward camera, long legs complete.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One giraffe calf standing on open savanna, natural long neck and legs, tall grass and sparse trees. Specific pose: Standing in slight side view, head inclined toward camera, long legs complete.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/23-giraffe.png",
+      "webp": "assets/images/23-giraffe.webp"
+    },
+    {
+      "name": "24-zebra",
+      "alt": "Zebra foal",
+      "scene": "One zebra foal standing on savanna grassland, bright sky and distant empty plain. No herd: exactly one animal. Specific pose: Lying in low grass, legs folded naturally, head raised toward camera.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One zebra foal standing on savanna grassland, bright sky and distant empty plain. No herd: exactly one animal. Specific pose: Lying in low grass, legs folded naturally, head raised toward camera.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/24-zebra.png",
+      "webp": "assets/images/24-zebra.webp"
+    },
+    {
+      "name": "25-camel",
+      "alt": "Camel calf",
+      "scene": "One dromedary camel calf standing beside sandy desert dunes, warm soft sand. Specific pose: Kneeling/resting on sand with legs folded, head toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One dromedary camel calf standing beside sandy desert dunes, warm soft sand. Specific pose: Kneeling/resting on sand with legs folded, head toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/25-camel.png",
+      "webp": "assets/images/25-camel.webp"
+    },
+    {
+      "name": "26-capybara",
+      "alt": "Capybara pup",
+      "scene": "One young capybara standing on a riverbank among reeds and humid tropical greenery. Specific pose: Sitting at river edge, face toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One young capybara standing on a riverbank among reeds and humid tropical greenery. Specific pose: Sitting at river edge, face toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/26-capybara.png",
+      "webp": "assets/images/26-capybara.webp"
+    },
+    {
+      "name": "27-alpaca",
+      "alt": "Alpaca cria",
+      "scene": "One alpaca cria standing on mountain pasture, grassy hills and crisp soft daylight. Specific pose: Standing almost frontal with head slightly tilted naturally toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One alpaca cria standing on mountain pasture, grassy hills and crisp soft daylight. Specific pose: Standing almost frontal with head slightly tilted naturally toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/27-alpaca.png",
+      "webp": "assets/images/27-alpaca.webp"
+    },
+    {
+      "name": "28-panda",
+      "alt": "Panda cub",
+      "scene": "One giant panda cub sitting in a lush bamboo grove, humid green forest. Specific pose: Sitting holding one bamboo shoot, facing lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One giant panda cub sitting in a lush bamboo grove, humid green forest. Specific pose: Sitting holding one bamboo shoot, facing lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/28-panda.png",
+      "webp": "assets/images/28-panda.webp"
+    },
+    {
+      "name": "29-hippo",
+      "alt": "Hippopotamus calf",
+      "scene": "One hippopotamus calf standing ankle deep at a calm river edge, dense riverbank vegetation. Specific pose: Standing in shallow water at slight side angle, eyes turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One hippopotamus calf standing ankle deep at a calm river edge, dense riverbank vegetation. Specific pose: Standing in shallow water at slight side angle, eyes turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/29-hippo.png",
+      "webp": "assets/images/29-hippo.webp"
+    },
+    {
+      "name": "30-rhino",
+      "alt": "Rhinoceros calf",
+      "scene": "One white rhinoceros calf standing on dusty savanna, scrub and warm sun; small developing horn appropriate to age. Specific pose: Standing laterally, head turned toward camera.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One white rhinoceros calf standing on dusty savanna, scrub and warm sun; small developing horn appropriate to age. Specific pose: Standing laterally, head turned toward camera.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/30-rhino.png",
+      "webp": "assets/images/30-rhino.webp"
+    },
+    {
+      "name": "31-tit",
+      "alt": "Great tit",
+      "scene": "One great tit bird perched on a flowering spring garden twig, entire bird and tail visible. Specific pose: Perched on thin blossom twig, body angled sideways, head turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One great tit bird perched on a flowering spring garden twig, entire bird and tail visible. Specific pose: Perched on thin blossom twig, body angled sideways, head turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/31-tit.png",
+      "webp": "assets/images/31-tit.webp"
+    },
+    {
+      "name": "32-owl",
+      "alt": "Owlet",
+      "scene": "One fluffy young owl perched on a broad branch beside a tree hollow, woodland at dusk, gentle evening light. Specific pose: Standing on a thick branch, face directly toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One fluffy young owl perched on a broad branch beside a tree hollow, woodland at dusk, gentle evening light. Specific pose: Standing on a thick branch, face directly toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/32-owl.png",
+      "webp": "assets/images/32-owl.webp"
+    },
+    {
+      "name": "33-crow",
+      "alt": "Crow",
+      "scene": "One hooded crow perched on a wooden fence, quiet leafy park, soft overcast sky. Specific pose: Perched on fence, wings folded, head turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One hooded crow perched on a wooden fence, quiet leafy park, soft overcast sky. Specific pose: Perched on fence, wings folded, head turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/33-crow.png",
+      "webp": "assets/images/33-crow.webp"
+    },
+    {
+      "name": "34-magpie",
+      "alt": "Magpie",
+      "scene": "One Eurasian magpie perched on a branch at a green forest edge, entire long tail visible, sun flecks. Specific pose: Perched on a branch, whole tail angled down, head turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One Eurasian magpie perched on a branch at a green forest edge, entire long tail visible, sun flecks. Specific pose: Perched on a branch, whole tail angled down, head turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/34-magpie.png",
+      "webp": "assets/images/34-magpie.webp"
+    },
+    {
+      "name": "35-pigeon",
+      "alt": "Pigeon",
+      "scene": "One rock pigeon standing on park cobblestones, blurred empty fountain and benches, no people. Specific pose: Standing almost front-on, head gently turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One rock pigeon standing on park cobblestones, blurred empty fountain and benches, no people. Specific pose: Standing almost front-on, head gently turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/35-pigeon.png",
+      "webp": "assets/images/35-pigeon.webp"
+    },
+    {
+      "name": "36-flamingo",
+      "alt": "Flamingo",
+      "scene": "One adult pink flamingo standing in shallow lagoon water, reflection and bright sky, entire neck and long legs visible. Specific pose: Standing on one leg naturally, body side on, curved neck bringing head and eye toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One adult pink flamingo standing in shallow lagoon water, reflection and bright sky, entire neck and long legs visible. Specific pose: Standing on one leg naturally, body side on, curved neck bringing head and eye toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/36-flamingo.png",
+      "webp": "assets/images/36-flamingo.webp"
+    },
+    {
+      "name": "37-hummingbird",
+      "alt": "Hummingbird",
+      "scene": "One hummingbird hovering beside vivid tropical flowers, whole bird, both natural wings and beak visible, realistic nature photography. Specific pose: Hovering at a slight frontal angle facing lens, wings naturally spread.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One hummingbird hovering beside vivid tropical flowers, whole bird, both natural wings and beak visible, realistic nature photography. Specific pose: Hovering at a slight frontal angle facing lens, wings naturally spread.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.Hovering complete hummingbird; omit flower near its beak, distant vegetation only.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/37-hummingbird.png",
+      "webp": "assets/images/37-hummingbird.webp"
+    },
+    {
+      "name": "38-cuckoo",
+      "alt": "Cuckoo chick",
+      "scene": "One young common cuckoo chick alone in a nest on a branch, young forest leaves and soft morning light; no other birds or eggs. Specific pose: Sitting alone in nest, looking into lens, beak closed.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One young common cuckoo chick alone in a nest on a branch, young forest leaves and soft morning light; no other birds or eggs. Specific pose: Sitting alone in nest, looking into lens, beak closed.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "original": "assets/images/originals/38-cuckoo.png",
+      "webp": "assets/images/38-cuckoo.webp"
+    },
+    {
+      "name": "39-peacock",
+      "prompt": "Use case: photorealistic-natural. Edit target is the supplied animal photo for a one-year-old child's fullscreen gallery. ONE separate final vertical 9:16 photograph, exactly one realistic healthy animal. NEW ART DIRECTION: immediately legible complete silhouette against extremely quiet natural environment. Almost uniform diffuse softly colored background, no scenic detail, busy ground texture, bright bokeh circles, glitter, flowers, caustic light or sharp objects around subject. At most faint habitat suggestion at extreme outer corners well away from subject. Preserve species realistic anatomy natural textures; no cartoon human expression enlarged eyes artificial smile text logos or watermark. Entire animal large but strictly within central 70% of width: leave15% clear margin on BOTH sides for narrow-phone cropping. All appendages complete. Gentle broad diffuse light, clear tonal separation, no harsh shiny patches. Specific new pose and environment below override original reference pose/background. One adult male Indian peacock front facing camera with completely spread symmetrical upright tail fan, every outer feather tip and both edges entirely visible. Fan width exactly65% of image width, generous uninterrupted soft green space to left and right. Body feet crest complete. Plain muted smooth green garden background, no flowers paths bushes or bright bokeh near fan.",
+      "scene": "One adult male Indian peacock front facing camera with completely spread symmetrical upright tail fan, every outer feather tip and both edges entirely visible. Fan width exactly65% of image width, generous uninterrupted soft green space to left and right. Body feet crest complete. Plain muted smooth green garden background, no flowers paths bushes or bright bokeh near fan.",
+      "original": "assets/images/originals/39-peacock.png",
+      "webp": "assets/images/39-peacock.webp",
+      "alt": "Peacock"
+    },
+    {
+      "name": "40-swan",
+      "alt": "Adult white swan",
+      "scene": "One adult white mute swan gracefully floating on a calm lake, beautiful naturally curved long neck and snowy white plumage, orange beak with natural black basal knob, both eyes/head oriented toward camera for a gentle direct gaze. Body at a slight side angle, complete body tail and folded wings visible, soft reflection, water lilies and reeds, warm morning light. NOT grey chick, NOT cygnet. Real elegant adult proportions, no extra birds.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One adult white mute swan gracefully floating on a calm lake, beautiful naturally curved long neck and snowy white plumage, orange beak with natural black basal knob, both eyes/head oriented toward camera for a gentle direct gaze. Body at a slight side angle, complete body tail and folded wings visible, soft reflection, water lilies and reeds, warm morning light. NOT grey chick, NOT cygnet. Real elegant adult proportions, no extra birds.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/40-swan.png",
+      "webp": "assets/images/40-swan.webp"
+    },
+    {
+      "name": "41-whale",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/41-whale.png",
+      "webp": "assets/images/41-whale.webp",
+      "alt": "Whale calf"
+    },
+    {
+      "name": "42-shark",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/42-shark.png",
+      "webp": "assets/images/42-shark.webp",
+      "alt": "Shark pup"
+    },
+    {
+      "name": "43-penguin",
+      "alt": "Penguin chick",
+      "scene": "One fluffy emperor penguin chick standing on snow and ice, Antarctic coast, distant southern ocean. Specific pose: Standing face on with flippers slightly spread, looking at lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One fluffy emperor penguin chick standing on snow and ice, Antarctic coast, distant southern ocean. Specific pose: Standing face on with flippers slightly spread, looking at lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame. Remove small four-point sparkle mark in bottom-right entirely. No marks.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/43-penguin.png",
+      "webp": "assets/images/43-penguin.webp"
+    },
+    {
+      "name": "44-seal",
+      "alt": "Seal pup",
+      "scene": "One fluffy white harp seal pup resting on snowy sea ice, whole body and all flippers visible, cold blue sea. Specific pose: Resting belly-down, front flippers naturally splayed, head lifted facing lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One fluffy white harp seal pup resting on snowy sea ice, whole body and all flippers visible, cold blue sea. Specific pose: Resting belly-down, front flippers naturally splayed, head lifted facing lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. Keep animal prominent and full body comfortably inside frame.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/44-seal.png",
+      "webp": "assets/images/44-seal.webp"
+    },
+    {
+      "name": "45-dolphin",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark. SECOND correction: repaint dolphin's skin as smooth natural UNPATTERNED gray skin with diffuse continuous shading. REMOVE the entire white ripple-like pattern over forehead and back. No bright lines, spots or caustic reflections on skin. Overcast diffuse underwater illumination, no direct sunlight.",
+      "original": "assets/images/originals/45-dolphin.png",
+      "webp": "assets/images/45-dolphin.webp",
+      "alt": "Dolphin calf"
+    },
+    {
+      "name": "46-octopus",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/46-octopus.png",
+      "webp": "assets/images/46-octopus.webp",
+      "alt": "Small octopus"
+    },
+    {
+      "name": "47-seahorse",
+      "prompt": "Use case: photorealistic-natural. Edit target is the supplied animal photo for a one-year-old child's fullscreen gallery. ONE separate final vertical 9:16 photograph, exactly one realistic healthy animal. NEW ART DIRECTION: immediately legible complete silhouette against extremely quiet natural environment. Almost uniform diffuse softly colored background, no scenic detail, busy ground texture, bright bokeh circles, glitter, flowers, caustic light or sharp objects around subject. At most faint habitat suggestion at extreme outer corners well away from subject. Preserve species realistic anatomy natural textures; no cartoon human expression enlarged eyes artificial smile text logos or watermark. Entire animal large but strictly within central 70% of width: leave15% clear margin on BOTH sides for narrow-phone cropping. All appendages complete. Gentle broad diffuse light, clear tonal separation, no harsh shiny patches. Specific new pose and environment below override original reference pose/background. One golden seahorse in clear side profile upright, full curved tail visible, a single slender plain seagrass stalk only if needed at tail. Uniform quiet blue-green water, no reef bubbles shafts of light or algae.",
+      "scene": "One golden seahorse in clear side profile upright, full curved tail visible, a single slender plain seagrass stalk only if needed at tail. Uniform quiet blue-green water, no reef bubbles shafts of light or algae.",
+      "original": "assets/images/originals/47-seahorse.png",
+      "webp": "assets/images/47-seahorse.webp",
+      "alt": "Seahorse"
+    },
+    {
+      "name": "48-crab",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/48-crab.png",
+      "webp": "assets/images/48-crab.webp",
+      "alt": "Crab"
+    },
+    {
+      "name": "49-ray",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/49-ray.png",
+      "webp": "assets/images/49-ray.webp",
+      "alt": "Young stingray"
+    },
+    {
+      "name": "50-walrus",
+      "alt": "Walrus calf",
+      "scene": "One walrus calf resting on Arctic rocky coast beside sea ice and cold water; whole body flippers visible, short undeveloped tusks age appropriate. Specific pose: Resting belly down, foreflippers splayed, head toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One walrus calf resting on Arctic rocky coast beside sea ice and cold water; whole body flippers visible, short undeveloped tusks age appropriate. Specific pose: Resting belly down, foreflippers splayed, head toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "finalFraming": "Full body contained within central 68 percent width; natural habitat retained.",
+      "original": "assets/images/originals/50-walrus.png",
+      "webp": "assets/images/50-walrus.webp"
+    },
+    {
+      "name": "51-jellyfish",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/51-jellyfish.png",
+      "webp": "assets/images/51-jellyfish.webp",
+      "alt": "Jellyfish"
+    },
+    {
+      "name": "52-snake",
+      "alt": "Snake",
+      "scene": "One harmless corn snake with natural reddish patterned scales loosely coiled on warm rocks beside grass and leafy forest edge, whole head and entire tail visible, calm closed mouth. Specific pose: Loosely coiled, head gently raised toward camera, mouth closed.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One harmless corn snake with natural reddish patterned scales loosely coiled on warm rocks beside grass and leafy forest edge, whole head and entire tail visible, calm closed mouth. Specific pose: Loosely coiled, head gently raised toward camera, mouth closed.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/52-snake.png",
+      "webp": "assets/images/52-snake.webp"
+    },
+    {
+      "name": "53-lizard",
+      "alt": "Lizard",
+      "scene": "One small green lizard standing on a sunny stone among sand and dry grass; all four legs and whole long tail visible. Specific pose: Standing sideways on stone, head turned toward lens.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One small green lizard standing on a sunny stone among sand and dry grass; all four legs and whole long tail visible. Specific pose: Standing sideways on stone, head turned toward lens.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/53-lizard.png",
+      "webp": "assets/images/53-lizard.webp"
+    },
+    {
+      "name": "54-butterfly",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/54-butterfly.png",
+      "webp": "assets/images/54-butterfly.webp",
+      "alt": "Butterfly"
+    },
+    {
+      "name": "55-bee",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/55-bee.png",
+      "webp": "assets/images/55-bee.webp",
+      "alt": "Bee"
+    },
+    {
+      "name": "56-snail",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/56-snail.png",
+      "webp": "assets/images/56-snail.webp",
+      "alt": "Snail"
+    },
+    {
+      "name": "57-lemur",
+      "alt": "Lemur infant",
+      "scene": "One young ring-tailed lemur sitting on a tropical branch among vines and leaves, entire striped tail and four limbs visible. Specific pose: Sitting sideways on branch, head turned toward lens, tail looped naturally beside body.",
+      "prompt": "Use case: photorealistic-natural. Edit target: this real-looking animal gallery photograph. Keep exactly one animal, same species age anatomy and natural eye contact. Vertical9:16. Keep a RECOGNIZABLE NATURAL HABITAT with softly recognizable simple large environmental shapes: this is not a studio portrait and NOT a flat empty gradient. Habitat behind animal must be gentle, slightly defocused, simplified, subdued in texture and contrast, no bright bokeh dots. Child should perceive animal FIRST and garden/window/barn/forest SECOND. Calm clear area immediately around the animal's face and entire silhouette, uncluttered foreground. No busy tiny flowers grass twigs or sharp stones touching outline. Reserve all details far behind or extreme corners. Gentle warm diffuse natural light, realistic fine fur/feather detail and normal eyes. Entire animal including ALL extremities. No text marks people other animals cartoon. Preserve habitat type: One young ring-tailed lemur sitting on a tropical branch among vines and leaves, entire striped tail and four limbs visible. Specific pose: Sitting sideways on branch, head turned toward lens, tail looped naturally beside body.. Keep exactly the animal's existing pose, age and species from the reference. Simplify ONLY the surroundings: recognizable forest tree trunks, pasture, pond, park, rocky shore or snow in the distance as appropriate, but FEWER environmental objects, gentle softer large shapes instead of complex scenery. No dense sharp ground texture around feet, no bright flowers near outline. Habitat at least partially recognizable, never uniform featureless studio backdrop. CAMERA ZOOM OUT by25percent relative to supplied image, reduce animal size so its complete widest extent fits middle70% image width,15% clear space both sides. Extend quiet habitat naturally around it.",
+      "original": "assets/images/originals/57-lemur.png",
+      "webp": "assets/images/57-lemur.webp"
+    },
+    {
+      "name": "58-dragonfly",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/58-dragonfly.png",
+      "webp": "assets/images/58-dragonfly.webp",
+      "alt": "Dragonfly"
+    },
+    {
+      "name": "59-ladybird",
+      "prompt": "Edit photograph: camera ZOOM OUT by25percent, keeping vertical9:16 frame. Make the complete animal noticeably smaller so it occupies only middle70% of image WIDTH, with at least15% additional quiet existing background both sides. Extend SAME existing environment, don't change species pose anatomy or environment style. No new objects. Entire tail claws wings antennae and every limb must fit even after trimming15% image left and right. Keep animal sharp naturally lit. No marks text watermark.",
+      "original": "assets/images/originals/59-ladybird.png",
+      "webp": "assets/images/59-ladybird.webp",
+      "alt": "Ladybird"
+    }
+  ]
+}

@@ -47,7 +47,7 @@ const server = http.createServer((req,res) => {
     const keys=await caches.keys(); const key=keys.find(k=>k.startsWith('animals-click:'));
     return (await (await caches.open(key)).keys()).map(r=>r.url);
   });
-  check(cached.length===66 && cached.filter(u=>u.endsWith('.webp')).length===58,'all app assets and 58 images cached');
+  check(cached.length===69 && cached.filter(u=>u.endsWith('.webp')).length===58,'all app assets and 58 images cached');
   const install=await cdp.send('Page.getInstallabilityErrors');
   check(install.installabilityErrors.length===0,'Chromium installability checks');
   await gesture(0); check((await current()).includes('02-kitten'),'tap does nothing');

@@ -81,7 +81,7 @@ async function swTests() {
   await lifecycle('install');ok(skipped,'SW activates only after precache succeeds');
   ok(freshRequests,'precache update bypasses stale HTTP cache');
   const cache=[...entries].find(([name])=>name.startsWith('animals-click:'))[1];
-  ok(cache.size===66,'66 precached routes/files');
+  ok(cache.size===69,'69 precached routes/files');
   ok([...cache.keys()].filter(url=>url.endsWith('.webp')).length===58,'all 58 images cached');
   await lifecycle('activate');ok(claimed && entries.has('speech-games:v1'),'SW claims clients and preserves other game caches');
   offline=true;

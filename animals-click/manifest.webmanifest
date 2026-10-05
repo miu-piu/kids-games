@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Зверята",
   "short_name": "Зверята",
-  "description": "Офлайн-галерея милых животных для ребёнка.",
+  "description": "Спокойная детская галерея животных, работающая офлайн.",
   "lang": "ru",
   "start_url": "./",
   "scope": "./",
@@ -11,8 +11,23 @@
   "theme_color": "#253726",
   "background_color": "#253726",
   "icons": [
-    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "./assets/icons/zveryata-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/zveryata-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/zveryata-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

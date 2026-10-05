@@ -28,7 +28,7 @@ python3 -m http.server 8000
 
 ```js
 const registration = await navigator.serviceWorker.ready;
-const cache = await caches.open(`animals-click:${registration.scope}:v3`);
+const cache = await caches.open(`animals-click:${registration.scope}:v4`);
 console.log((await cache.keys()).length === 66); // true = полный precache
 ```
 
@@ -138,7 +138,7 @@ WebP: 1440×2560, точные 9:16, качество 92. PNG-оригиналы
 node animals-click/tests/logic.cjs
 ```
 
-102 проверки прошли в симулированной среде DOM/Service Worker: свайпы и отбрасывание случайных жестов, защита повторов, оба циклических края, точные 30 секунд, сброс только на переходах, фон/возврат, все 66 кешируемых путей, offline-ответы и fallback, отказ установки при отсутствующем ресурсе, изоляция кешей других игр. Также проверены синтаксис JS, JSON manifest, декодирование всех PNG/WebP, размеры и кадрирование.
+103 проверки прошли в симулированной среде DOM/Service Worker: свайпы и отбрасывание случайных жестов, защита повторов, оба циклических края, точные 30 секунд, сброс только на переходах, фон/возврат, все 66 кешируемых путей, offline-ответы и fallback, отказ установки при отсутствующем ресурсе, изоляция кешей других игр. Также проверены синтаксис JS, JSON manifest, декодирование всех PNG/WebP, размеры и кадрирование.
 
 Полный Chromium-прогон подготовлен:
 
@@ -175,7 +175,7 @@ animals-click/
     └── check.cjs
 ```
 
-При изменении app/assets повысить `v3` в `service-worker.js`, чтобы сформировать новый полный кеш. Worker удаляет только устаревшие кеши Animals Click своего scope; кеши остальных игр сохраняются.
+При изменении app/assets повысить `v4` в `service-worker.js`, чтобы сформировать новый полный кеш. Worker удаляет только устаревшие кеши Animals Click своего scope; кеши остальных игр сохраняются.
 
 ## Расширение серии
 

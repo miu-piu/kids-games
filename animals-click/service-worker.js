@@ -1,6 +1,6 @@
 'use strict';
 const PREFIX = `animals-click:${self.registration.scope}:`;
-const CACHE = `${PREFIX}v3`;
+const CACHE = `${PREFIX}v4`;
 const ASSETS = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/maskable-512.png',
@@ -11,7 +11,8 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
     // Atomic addAll: activation only happens when EVERY image and app file is cached.
-    await cache.addAll(ASSETS);
+    // Bypass HTTP cache so an update cannot mix old app code with new photos.
+    await cache.addAll(ASSETS.map(url => new Request(url, { cache: 'reload' })));
     await self.skipWaiting();
   })());
 });

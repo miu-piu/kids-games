@@ -60,16 +60,17 @@ async function appTests() {
 }
 async function swTests() {
   const scope='https://example.test/kids-games/animals-click/';
-  const entries=new Map([['speech-games:v1',new Map()]]);let network=0,offline=false,skipped=false,claimed=false;
+  const entries=new Map([['speech-games:v1',new Map()]]);let network=0,offline=false,skipped=false,claimed=false, freshRequests=false;
   const caches={async open(name){if(!entries.has(name))entries.set(name,new Map());const cache=entries.get(name);return {
-    async addAll(urls){const pending=urls.map(url=>{const local=url.slice(scope.length)||'index.html';return [url,fs.readFileSync(path.join(root,local))];});for(const [url,bytes] of pending)cache.set(url,bytes);},
+    async addAll(requests){freshRequests=requests.every(request=>request.cache==='reload');const urls=requests.map(request=>request.url);const pending=urls.map(url=>{const local=url.slice(scope.length)||'index.html';return [url,fs.readFileSync(path.join(root,local))];});for(const [url,bytes] of pending)cache.set(url,bytes);},
     async match(request,{ignoreSearch=false}={}){let url=typeof request==='string'?request:request.url;if(ignoreSearch)url=url.split('?')[0];return cache.get(url);}
   };},async keys(){return [...entries.keys()];},async delete(name){return entries.delete(name);}};
   const self=surface({registration:{scope},async skipWaiting(){skipped=true;},clients:{async claim(){claimed=true;}}});
-  const sandbox={self,caches,URL,console,fetch(){network++;if(offline)throw Error('offline');return Buffer.from('network');}};
+  const sandbox={self,caches,URL,Request,console,fetch(){network++;if(offline)throw Error('offline');return Buffer.from('network');}};
   vm.runInNewContext(fs.readFileSync(path.join(root,'service-worker.js'),'utf8'),sandbox);
   async function lifecycle(name){let pending;self.dispatch(name,{waitUntil(p){pending=p;}});await pending;}
   await lifecycle('install');ok(skipped,'SW activates only after precache succeeds');
+  ok(freshRequests,'precache update bypasses stale HTTP cache');
   const cache=[...entries].find(([name])=>name.startsWith('animals-click:'))[1];
   ok(cache.size===66,'66 precached routes/files');
   ok([...cache.keys()].filter(url=>url.endsWith('.webp')).length===58,'all 58 images cached');

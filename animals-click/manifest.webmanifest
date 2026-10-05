@@ -1,9 +1,9 @@
 {
   "id": "./",
-  "name": "Animals Click",
-  "short_name": "Animals",
-  "description": "A quiet offline animal photograph gallery.",
-  "lang": "en",
+  "name": "Зверята",
+  "short_name": "Зверята",
+  "description": "Офлайн-галерея милых животных для ребёнка.",
+  "lang": "ru",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

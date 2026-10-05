@@ -38,7 +38,7 @@ const server = http.createServer((req,res) => {
     await page.waitForTimeout(30);
   }
   async function expectSlide(name) { await page.waitForFunction(name=>document.querySelector('#animal').getAttribute('src').includes(name),name); }
-  check((await current()).includes('01-arich'),'first photograph');
+  check((await current()).includes('02-kitten'),'first photograph');
   check(await page.locator('body').innerText()==='','no visible text');
   check(await page.locator('button,a,input').count()===0,'no controls or links');
   const manifest=await page.evaluate(async()=> (await fetch('./manifest.webmanifest')).json());
@@ -47,51 +47,51 @@ const server = http.createServer((req,res) => {
     const keys=await caches.keys(); const key=keys.find(k=>k.startsWith('animals-click:'));
     return (await (await caches.open(key)).keys()).map(r=>r.url);
   });
-  check(cached.length===18 && cached.filter(u=>u.endsWith('.webp')).length===10,'all app assets and ten images cached');
+  check(cached.length===17 && cached.filter(u=>u.endsWith('.webp')).length===9,'all app assets and nine images cached');
   const install=await cdp.send('Page.getInstallabilityErrors');
   check(install.installabilityErrors.length===0,'Chromium installability checks');
-  await gesture(0); check((await current()).includes('01-arich'),'tap does nothing');
-  await gesture(12,4); check((await current()).includes('01-arich'),'short movement ignored');
-  await gesture(5,160); check((await current()).includes('01-arich'),'vertical gesture ignored');
-  await gesture(100,90); check((await current()).includes('01-arich'),'diagonal gesture ignored');
-  await gesture(-140,0,1100); check((await current()).includes('01-arich'),'hold then drag ignored');
+  await gesture(0); check((await current()).includes('02-kitten'),'tap does nothing');
+  await gesture(12,4); check((await current()).includes('02-kitten'),'short movement ignored');
+  await gesture(5,160); check((await current()).includes('02-kitten'),'vertical gesture ignored');
+  await gesture(100,90); check((await current()).includes('02-kitten'),'diagonal gesture ignored');
+  await gesture(-140,0,1100); check((await current()).includes('02-kitten'),'hold then drag ignored');
   await touch('touchStart',[[240,400,1],[290,400,2]]); await page.clock.runFor(200);
   await touch('touchMove',[[100,400,1],[150,400,2]]); await touch('touchEnd',[]);
-  check((await current()).includes('01-arich'),'multitouch ignored');
-  await gesture(-140); await expectSlide('02-kitten'); console.log('PASS left swipe');
-  await gesture(-140); check((await current()).includes('02-kitten'),'rapid repeat suppressed');
-  await page.clock.runFor(400); await gesture(140); await expectSlide('01-arich'); console.log('PASS right swipe');
+  check((await current()).includes('02-kitten'),'multitouch ignored');
+  await gesture(-140); await expectSlide('03-corgi'); console.log('PASS left swipe');
+  await gesture(-140); check((await current()).includes('03-corgi'),'rapid repeat suppressed');
+  await page.clock.runFor(400); await gesture(140); await expectSlide('02-kitten'); console.log('PASS right swipe');
   await page.clock.runFor(400); await gesture(140); await expectSlide('10-hedgehog'); console.log('PASS first to last wrap');
-  await page.clock.runFor(400); await gesture(-140); await expectSlide('01-arich'); console.log('PASS last to first wrap');
+  await page.clock.runFor(400); await gesture(-140); await expectSlide('02-kitten'); console.log('PASS last to first wrap');
   // Exact 30-second timer, including a tap just before expiration.
   await page.reload(); await page.waitForFunction(()=>document.querySelector('img').complete);
   await page.clock.runFor(29000); await gesture(0,0,150);
-  check((await current()).includes('01-arich'),'no automatic transition before 30 seconds');
-  await page.clock.runFor(1000); await expectSlide('02-kitten'); console.log('PASS 30-second transition; tap does not reset timer');
-  await page.clock.runFor(29000); await gesture(-140); await expectSlide('03-corgi');
-  await page.clock.runFor(1000); check((await current()).includes('03-corgi'),'manual swipe resets timer');
-  await page.clock.runFor(29000); await expectSlide('04-rabbit'); console.log('PASS new 30-second countdown after manual swipe');
-  await page.clock.runFor(30000); await expectSlide('05-calf'); console.log('PASS automatic transition resets timer');
+  check((await current()).includes('02-kitten'),'no automatic transition before 30 seconds');
+  await page.clock.runFor(1000); await expectSlide('03-corgi'); console.log('PASS 30-second transition; tap does not reset timer');
+  await page.clock.runFor(29000); await gesture(-140); await expectSlide('04-rabbit');
+  await page.clock.runFor(1000); check((await current()).includes('04-rabbit'),'manual swipe resets timer');
+  await page.clock.runFor(29000); await expectSlide('05-calf'); console.log('PASS new 30-second countdown after manual swipe');
+  await page.clock.runFor(30000); await expectSlide('06-goat'); console.log('PASS automatic transition resets timer');
   // Visibility event follows the browser's actual document.hidden state in production.
   await page.evaluate(()=>{ Object.defineProperty(document,'hidden',{configurable:true,get:()=>true}); document.dispatchEvent(new Event('visibilitychange')); });
-  await page.clock.runFor(180000); check((await current()).includes('05-calf'),'timer paused in background');
+  await page.clock.runFor(180000); check((await current()).includes('06-goat'),'timer paused in background');
   await page.evaluate(()=>{ Object.defineProperty(document,'hidden',{configurable:true,get:()=>false}); document.dispatchEvent(new Event('visibilitychange')); });
-  await page.clock.runFor(29000); check((await current()).includes('05-calf'),'no return-from-background cascade');
-  await page.clock.runFor(1000); await expectSlide('06-goat'); console.log('PASS fresh countdown on return');
+  await page.clock.runFor(29000); check((await current()).includes('06-goat'),'no return-from-background cascade');
+  await page.clock.runFor(1000); await expectSlide('07-lamb'); console.log('PASS fresh countdown on return');
   const attempts=[]; page.on('request',r=>attempts.push(r.url()));
   await context.setOffline(true);
   await page.reload(); await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
-  for(let i=0;i<10;i++) {
+  for(let i=0;i<9;i++) {
     await page.clock.runFor(400); await gesture(-140);
     await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
   }
-  check((await current()).includes('01-arich'),'complete ten-image cycle offline after reload');
+  check((await current()).includes('02-kitten'),'complete nine-image cycle offline after reload');
   await page.goto(base+'offline-fallback'); await page.waitForFunction(()=>document.querySelector('img').naturalWidth>0);
-  check((await current()).includes('01-arich'),'offline navigation fallback');
+  check((await current()).includes('02-kitten'),'offline navigation fallback');
   check(attempts.every(u=>u.startsWith(base)),'no external requests');
   // Capture all crops on a tall phone; inspection checks limbs and composition.
   await page.goto(base);
-  for(let i=0;i<10;i++) {
+  for(let i=0;i<9;i++) {
     await page.waitForFunction(()=>document.querySelector('img').complete && document.querySelector('img').naturalWidth>0);
     await page.clock.runFor(400);
     await page.screenshot({path:path.join(output,`phone-${i+1}.png`)});

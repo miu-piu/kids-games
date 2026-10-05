@@ -1,10 +1,10 @@
 'use strict';
 const PREFIX = `animals-click:${self.registration.scope}:`;
-const CACHE = `${PREFIX}v1`;
+const CACHE = `${PREFIX}v2`;
 const ASSETS = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/maskable-512.png',
-  ...['01-arich', '02-kitten', '03-corgi', '04-rabbit', '05-calf', '06-goat', '07-lamb', '08-chick', '09-duckling', '10-hedgehog']
+  ...['02-kitten', '03-corgi', '04-rabbit', '05-calf', '06-goat', '07-lamb', '08-chick', '09-duckling', '10-hedgehog']
     .map(name => `./assets/images/${name}.webp`)
 ].map(path => new URL(path, self.registration.scope).href);
 self.addEventListener('install', event => {

@@ -1,7 +1,6 @@
 'use strict';
 (() => {
   const slides = [
-    ['01-arich', 'Chinese Crested Powderpuff'],
     ['02-kitten', 'Kitten'], ['03-corgi', 'Corgi puppy'],
     ['04-rabbit', 'Rabbit'], ['05-calf', 'Calf'], ['06-goat', 'Young goat'],
     ['07-lamb', 'Lamb'], ['08-chick', 'Chick'],

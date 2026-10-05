@@ -1,4 +1,5 @@
-var CACHE = 'speech-games-v8';
+var CACHE = 'speech-games-v9';
+var CACHE_PREFIX = 'speech-games-';
 var ASSETS = ['./','./index.html','./styles.css','./data.js','./app.js','./patch.js','./voice.js','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', function (event) {
@@ -11,7 +12,7 @@ self.addEventListener('install', function (event) {
 self.addEventListener('activate', function (event) {
   event.waitUntil(caches.keys().then(function (keys) {
     return Promise.all(keys.filter(function (key) {
-      return key !== CACHE;
+      return key.indexOf(CACHE_PREFIX) === 0 && key !== CACHE;
     }).map(function (key) {
       return caches.delete(key);
     }));
